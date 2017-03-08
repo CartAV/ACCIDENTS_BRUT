@@ -22,13 +22,6 @@
           "objectType": "DATASET"
         },
         "modes": []
-      },
-      {
-        "objectRef": {
-          "objectId": "caracteristiques_vertica",
-          "objectType": "DATASET"
-        },
-        "modes": []
       }
     ]
   },
@@ -66,12 +59,8 @@
       },
       {
         "type": "DATASET",
-        "localName": "caracteristiques_vertica",
+        "localName": "caracteristiques_postgis",
         "rules": [
-          {
-            "targetProject": "ACCIDENTS",
-            "appearOnFlow": true
-          },
           {
             "targetProject": "GECODAGE_ACCIDENTS",
             "appearOnFlow": true
@@ -80,10 +69,10 @@
       },
       {
         "type": "DATASET",
-        "localName": "caracteristiques_postgis",
+        "localName": "caracteristiques_vertica",
         "rules": [
           {
-            "targetProject": "GECODAGE_ACCIDENTS",
+            "targetProject": "ACCIDENTS",
             "appearOnFlow": true
           }
         ]
@@ -154,11 +143,11 @@
   },
   "name": "Accidents Corporels — Données brutes",
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488989141520
+    "lastModifiedOn": 1488995423964
   },
   "description": "Le projet vise à reproduire les traitements déjà effectués en python/panda.\nLes données sont issues de la sécurité routière, dans la version opendata (liens directs des données depuis le site etalab).\nLe projet vise également à offrir un exemple d\u0027usage des outils de préparation des données et de modélisation. \u003cbr\u003e\nStatistiques par accident : http://10.237.27.129/projects/ACCIDENTS/datasets/accidents/visualize/\n\u003cbr\u003e\npar usager \nhttp://10.237.27.129/projects/ACCIDENTS/datasets/accidents_par_usager/explore/",
   "shortDesc": "Données issues de l\u0027opendata etalab (BAAC)\nDataprep master\u003cbr\u003e\nstatistiques : http://10.237.27.129/projects/ACCIDENTS/datasets/accidents/visualize/",
