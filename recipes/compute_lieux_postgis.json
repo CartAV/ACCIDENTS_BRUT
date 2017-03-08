@@ -1,0 +1,50 @@
+{
+  "type": "CustomCode_user-meaning",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "customConfig": {}
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "inputs": {
+    "input": {
+      "items": [
+        {
+          "ref": "lieux_stacked",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "output": {
+      "items": [
+        {
+          "ref": "lieux_postgis",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "grabenertr"
+    },
+    "lastModifiedOn": 1488980818153
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "grabenertr"
+    },
+    "lastModifiedOn": 1488980818153
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}
