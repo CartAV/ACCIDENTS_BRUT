@@ -242,6 +242,28 @@
         },
         "sql": "SELECT\n Num_Acc,\n count (Num_Acc)\nFROM\n \"usagers_postgis\"\nGROUP BY\n Num_Acc;",
         "expandedSql": "SELECT\n Num_Acc,\n count (Num_Acc)\nFROM\n \"usagers_postgis\"\nGROUP BY\n Num_Acc;"
+      },
+      {
+        "mode": "SQL",
+        "id": "yKmsn216RQUq",
+        "runOn": 1488992687516,
+        "runIn": 57,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "zMyY3nKIEaUxg427",
+        "hash": "31d6441ace333ff0f05fa3af6131fdaf",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT\n Num_Acc,\n count (Num_Acc)\nFROM\n \"usagers_postgis\"\nGROUP BY\n Num_Acc;",
+        "expandedSql": "SELECT\n Num_Acc,\n count (Num_Acc)\nFROM\n \"usagers_postgis\"\nGROUP BY\n Num_Acc;"
       }
     ]
   }
