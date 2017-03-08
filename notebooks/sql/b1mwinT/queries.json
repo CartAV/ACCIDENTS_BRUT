@@ -440,6 +440,28 @@
         },
         "sql": "/*SELECT\n \"Num_Acc\",\n count (\"Num_Acc\") as C\nFROM\n usagers_postgis\nGROUP BY\n \"Num_Acc\"\nORDER BY\n  C DESC\nLIMIT 20*/\n\nselect * from \"caracteristiques_postgis\" where \"Num_Acc\" \u003d \u0027200600016834\u0027",
         "expandedSql": "/*SELECT\n \"Num_Acc\",\n count (\"Num_Acc\") as C\nFROM\n usagers_postgis\nGROUP BY\n \"Num_Acc\"\nORDER BY\n  C DESC\nLIMIT 20*/\n\nselect * from \"caracteristiques_postgis\" where \"Num_Acc\" \u003d \u0027200600016834\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "wGTFTMaUD06z",
+        "runOn": 1488993051218,
+        "runIn": 170,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "Pnl8GcFftevvTi6D",
+        "hash": "e28453f819e544196e031113da2654ef",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT\n \"Num_Acc\",\n count (\"Num_Acc\") as C\nFROM\n usagers_postgis\nGROUP BY\n \"Num_Acc\"\nORDER BY\n  C DESC\nLIMIT 20\n",
+        "expandedSql": "SELECT\n \"Num_Acc\",\n count (\"Num_Acc\") as C\nFROM\n usagers_postgis\nGROUP BY\n \"Num_Acc\"\nORDER BY\n  C DESC\nLIMIT 20\n"
       }
     ]
   }
