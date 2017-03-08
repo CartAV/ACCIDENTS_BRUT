@@ -1,0 +1,115 @@
+{
+    "postFilter": {
+        "distinct": false, 
+        "enabled": false, 
+        "language": "GREL"
+    }, 
+    "addOriginColumn": false, 
+    "engineParams": {
+        "impala": {
+            "forceStreamMode": true
+        }, 
+        "sparkSQL": {
+            "overwriteOutputSchema": true, 
+            "readParams": {
+                "map": {}
+            }, 
+            "sparkConfig": {
+                "inheritConf": "default", 
+                "conf": []
+            }
+        }, 
+        "hive": {
+            "useGlobalMetastore": false, 
+            "executionEngine": "HIVECLI_LOCAL", 
+            "addDkuUdf": false, 
+            "hiveconf": []
+        }, 
+        "lowerCaseSchemaIfEngineRequiresIt": true
+    }, 
+    "selectedColumns": [
+        "Num_Acc", 
+        "an", 
+        "mois", 
+        "jour", 
+        "hrmn", 
+        "lum", 
+        "agg", 
+        "int", 
+        "atm", 
+        "col", 
+        "com", 
+        "adr", 
+        "gps", 
+        "lat", 
+        "long", 
+        "dep"
+    ], 
+    "originColumnName": "original_dataset", 
+    "mode": "UNION", 
+    "virtualInputs": [
+        {
+            "preFilter": {
+                "distinct": false, 
+                "enabled": false, 
+                "language": "GREL"
+            }, 
+            "index": 0, 
+            "originLabel": "caracteristiques_2005"
+        }, 
+        {
+            "preFilter": {
+                "distinct": false, 
+                "enabled": false, 
+                "language": "GREL"
+            }, 
+            "index": 1, 
+            "originLabel": "caracteristiques_2006"
+        }, 
+        {
+            "preFilter": {}, 
+            "index": 2, 
+            "originLabel": "caracteristiques_2007"
+        }, 
+        {
+            "preFilter": {}, 
+            "index": 3, 
+            "originLabel": "caracteristiques_2008"
+        }, 
+        {
+            "preFilter": {}, 
+            "index": 4, 
+            "originLabel": "caracteristiques_2009"
+        }, 
+        {
+            "preFilter": {}, 
+            "index": 5, 
+            "originLabel": "caracteristiques_2010"
+        }, 
+        {
+            "preFilter": {}, 
+            "index": 6, 
+            "originLabel": "caracteristiques_2011"
+        }, 
+        {
+            "preFilter": {}, 
+            "index": 7, 
+            "originLabel": "caracteristiques_2012"
+        }, 
+        {
+            "preFilter": {}, 
+            "index": 8, 
+            "originLabel": "caracteristiques_2013"
+        }, 
+        {
+            "preFilter": {}, 
+            "index": 9, 
+            "originLabel": "caracteristiques_2014"
+        }, 
+        {
+            "preFilter": {}, 
+            "index": 10, 
+            "originLabel": "caracteristiques_2015"
+        }
+    ]
+}

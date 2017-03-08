@@ -1,0 +1,60 @@
+{
+  "charts": [], 
+  "checklists": {
+    "checklists": []
+  }, 
+  "creationTag": {
+    "lastModifiedBy": {
+      "displayName": "M\u00e9lanie d'Auria", 
+      "login": "dauriame"
+    }, 
+    "lastModifiedOn": 1481729931238, 
+    "versionNumber": 0
+  }, 
+  "inputDatasetSmartName": "caracteristiques_2007", 
+  "name": "Analyze caracteristiques_2007", 
+  "script": {
+    "analysisColumnData": {}, 
+    "charts": [], 
+    "chartsEngine": "LINO", 
+    "coloring": {
+      "individualColumns": [], 
+      "scheme": "MEANING_AND_STATUS", 
+      "valueColoringMode": "HASH"
+    }, 
+    "columnsSelection": {
+      "mode": "ALL"
+    }, 
+    "explorationFilters": [], 
+    "explorationSampling": {
+      "_refreshTrigger": 1, 
+      "autoRefreshSample": false, 
+      "selection": {
+        "maxRecords": 1000000, 
+        "partitionSelectionMethod": "ALL", 
+        "samplingMethod": "HEAD_SEQUENTIAL", 
+        "targetRatio": 0.02
+      }
+    }, 
+    "exploreUIParams": {
+      "autoRefresh": true
+    }, 
+    "globalSearchQuery": "", 
+    "previewMode": "ALL_ROWS", 
+    "steps": [], 
+    "tags": [], 
+    "vizSampling": {
+      "_refreshTrigger": 0, 
+      "autoRefreshSample": false
+    }
+  }, 
+  "tags": [], 
+  "versionTag": {
+    "lastModifiedBy": {
+      "displayName": "M\u00e9lanie d'Auria", 
+      "login": "dauriame"
+    }, 
+    "lastModifiedOn": 1481729942520, 
+    "versionNumber": 1
+  }
+}

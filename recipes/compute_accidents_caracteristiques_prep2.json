@@ -1,0 +1,49 @@
+{
+  "checklists": {
+    "checklists": []
+  }, 
+  "customMeta": {
+    "kv": {}
+  }, 
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "deps": [], 
+          "ref": "accidents_caracteristiques_prep1"
+        }
+      ]
+    }, 
+    "scriptDeps": {
+      "items": []
+    }
+  }, 
+  "neverRecomputeExistingPartitions": false, 
+  "optionalDependencies": false, 
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "appendMode": false, 
+          "ref": "accidents_caracteristiques_prep2"
+        }
+      ]
+    }
+  }, 
+  "params": {
+    "engineType": "DSS", 
+    "hadoopConfigKeys": []
+  }, 
+  "redispatchPartitioning": false, 
+  "tags": [], 
+  "type": "shaker", 
+  "versionTag": {
+    "lastModifiedBy": {
+      "displayName": "Tristam Gr\u00e4bener", 
+      "email": "tristam.grabener@interieur.gouv.fr", 
+      "login": "grabenertr"
+    }, 
+    "lastModifiedOn": 1488278997036, 
+    "versionNumber": 39
+  }
+}
