@@ -154,6 +154,28 @@
         },
         "sql": "select count(*) from usagers_postgis group by Num_Acc",
         "expandedSql": "select count(*) from usagers_postgis group by Num_Acc"
+      },
+      {
+        "mode": "SQL",
+        "id": "TgRQmAflzISK",
+        "runOn": 1488992574443,
+        "runIn": 47,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "GUuvZmhsY5zPwNMZ",
+        "hash": "39c9038bd3778dbaa44880b24c9c91f9",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*) from usagers_postgis GROUP_BY Num_Acc",
+        "expandedSql": "select count(*) from usagers_postgis GROUP_BY Num_Acc"
       }
     ]
   }
