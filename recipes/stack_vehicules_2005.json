@@ -1,5 +1,11 @@
 {
   "type": "vstack",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
   "inputs": {
     "main": {
       "items": [
@@ -54,29 +60,21 @@
     "main": {
       "items": [
         {
-          "ref": "accidents_vehicules",
+          "ref": "vehicules_stacked",
           "appendMode": false
         }
       ]
     }
   },
-  "neverRecomputeExistingPartitions": false,
-  "optionalDependencies": false,
-  "checklists": {
-    "checklists": []
+  "versionTag": {
+    "versionNumber": 8,
+    "lastModifiedBy": {
+      "login": "grabenertr"
+    },
+    "lastModifiedOn": 1488978277209
   },
   "tags": [],
-  "versionTag": {
-    "versionNumber": 7,
-    "lastModifiedBy": {
-      "login": "antoinefa",
-      "displayName": "Fabien Antoine",
-      "email": "fabien.antoine@interieur.gouv.fr"
-    },
-    "lastModifiedOn": 1482503225806
-  },
-  "customMeta": {
-    "kv": {}
-  },
-  "redispatchPartitioning": false
+  "checklists": {
+    "checklists": []
+  }
 }
