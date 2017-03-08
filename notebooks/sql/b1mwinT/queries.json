@@ -44,6 +44,28 @@
         },
         "sql": "select Num_Acc, count(*) as thecount from usagers_postgis group by(Num_Acc) order by thecount desc",
         "expandedSql": "select Num_Acc, count(*) as thecount from usagers_postgis group by(Num_Acc) order by thecount desc"
+      },
+      {
+        "mode": "SQL",
+        "id": "DReCQhjmb83u",
+        "runOn": 1488992490292,
+        "runIn": 47,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "3cdYC829pS0rAnrO",
+        "hash": "689e2a229ef7ed473cfd267bf85a7d5c",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from usagers_postgis",
+        "expandedSql": "select * from usagers_postgis"
       }
     ]
   }
