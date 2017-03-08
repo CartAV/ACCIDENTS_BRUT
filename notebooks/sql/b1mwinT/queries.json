@@ -22,6 +22,28 @@
         },
         "sql": "select Num_Acc, count(Num_Acc) as thecount from usagers_postgis group by(Num_Acc) order by thecount desc",
         "expandedSql": "select Num_Acc, count(Num_Acc) as thecount from usagers_postgis group by(Num_Acc) order by thecount desc"
+      },
+      {
+        "mode": "SQL",
+        "id": "PsarYZucZDA6",
+        "runOn": 1488992430710,
+        "runIn": 47,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "4l8y9SX24IcIN9wB",
+        "hash": "e987d72604110b1bfe1cc1855de6c1c9",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select Num_Acc, count(*) as thecount from usagers_postgis group by(Num_Acc) order by thecount desc",
+        "expandedSql": "select Num_Acc, count(*) as thecount from usagers_postgis group by(Num_Acc) order by thecount desc"
       }
     ]
   }
