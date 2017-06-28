@@ -52,6 +52,10 @@
         {
           "ref": "lieux_2015",
           "deps": []
+        },
+        {
+          "ref": "lieux_2016",
+          "deps": []
         }
       ]
     }
@@ -67,11 +71,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488980647138
+    "lastModifiedOn": 1498640886307
   },
   "tags": [],
   "checklists": {
