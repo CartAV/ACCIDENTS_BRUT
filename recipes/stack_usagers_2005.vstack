@@ -62,6 +62,11 @@
       "index": 10,
       "originLabel": "usagers_2015",
       "preFilter": {}
+    },
+    {
+      "index": 11,
+      "originLabel": "usagers_2016",
+      "preFilter": {}
     }
   ],
   "engineParams": {
@@ -86,12 +91,12 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
-  "originColumnName": "original_dataset",
   "postFilter": {
     "enabled": false,
     "language": "GREL",
     "distinct": false
   },
+  "originColumnName": "original_dataset",
   "selectedColumns": [
     "Num_Acc",
     "place",
