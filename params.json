@@ -15,6 +15,13 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "lieux_vertica",
+          "objectType": "DATASET"
+        },
+        "modes": []
       }
     ]
   },
@@ -60,20 +67,6 @@
       },
       {
         "type": "DATASET",
-        "localName": "lieux_vertica",
-        "rules": [
-          {
-            "targetProject": "ACCIDENTS",
-            "appearOnFlow": true
-          },
-          {
-            "targetProject": "Accidents_DSCR",
-            "appearOnFlow": true
-          }
-        ]
-      },
-      {
-        "type": "DATASET",
         "localName": "caracteristiques_vertica",
         "rules": [
           {
@@ -98,6 +91,24 @@
         "rules": [
           {
             "targetProject": "BASESDEPRODUCTION",
+            "appearOnFlow": true
+          }
+        ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "lieux_vertica",
+        "rules": [
+          {
+            "targetProject": "ACCIDENTS",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "Accidents_DSCR",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "GECODAGE_ACCIDENTS",
             "appearOnFlow": true
           }
         ]
@@ -173,11 +184,11 @@
   },
   "name": "Accidents Corporels — Données brutes",
   "versionTag": {
-    "versionNumber": 21,
+    "versionNumber": 22,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "chabouisfr"
     },
-    "lastModifiedOn": 1497456288028
+    "lastModifiedOn": 1499272232527
   },
   "description": "Le projet vise à reproduire les traitements déjà effectués en python/panda.\nLes données sont issues de la sécurité routière, dans la version opendata (liens directs des données depuis le site etalab).\nLe projet vise également à offrir un exemple d\u0027usage des outils de préparation des données et de modélisation. \u003cbr\u003e\nStatistiques par accident : http://10.237.27.129/projects/ACCIDENTS/datasets/accidents/visualize/\n\u003cbr\u003e\npar usager \nhttp://10.237.27.129/projects/ACCIDENTS/datasets/accidents_par_usager/explore/",
   "shortDesc": "Données issues de l\u0027opendata etalab (BAAC)\nDataprep master\u003cbr\u003e\nstatistiques : http://10.237.27.129/projects/ACCIDENTS/datasets/accidents/visualize/",
