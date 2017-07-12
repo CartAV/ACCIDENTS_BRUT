@@ -484,6 +484,28 @@
         },
         "sql": "/*SELECT\n \"Num_Acc\",\n count (\"Num_Acc\") as C\nFROM\n usagers_postgis\nGROUP BY\n \"Num_Acc\"\nORDER BY\n  C DESC\nLIMIT 20*/\n\nselect * from \"caracteristiques_postgis\" where \"Num_Acc\" \u003d \u0027200600074917\u0027",
         "expandedSql": "/*SELECT\n \"Num_Acc\",\n count (\"Num_Acc\") as C\nFROM\n usagers_postgis\nGROUP BY\n \"Num_Acc\"\nORDER BY\n  C DESC\nLIMIT 20*/\n\nselect * from \"caracteristiques_postgis\" where \"Num_Acc\" \u003d \u0027200600074917\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "tW36rOMMT7dy",
+        "runOn": 1499859288459,
+        "runIn": 155,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "cDHkN0tMmFFxggwD",
+        "hash": "33d084cef7c90f97a1ceb86ce92c0813",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select senc, count(*) from \"vehicules_pg\" group by senc",
+        "expandedSql": "select senc, count(*) from \"vehicules_pg\" group by senc"
       }
     ],
     "c4bmgxjs6on": [
