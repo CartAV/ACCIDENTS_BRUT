@@ -752,6 +752,28 @@
         },
         "sql": "select count(*) from \"caracteristiques_postgis\" c, \"lieux_postgis\" l where c.\"Num_Acc\" \u003d l.\"Num_Acc\" and (l.catr\u003d\u0027autoroute\u0027 or l.catr\u003d\u0027route nationale\u0027)",
         "expandedSql": "select count(*) from \"caracteristiques_postgis\" c, \"lieux_postgis\" l where c.\"Num_Acc\" \u003d l.\"Num_Acc\" and (l.catr\u003d\u0027autoroute\u0027 or l.catr\u003d\u0027route nationale\u0027)"
+      },
+      {
+        "mode": "SQL",
+        "id": "zCgs3xAxQF0G",
+        "runOn": 1499859727432,
+        "runIn": 2150,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "pJa2AMnFHnGo3cjr",
+        "hash": "7f07fb9d95c95617fe0bf397d34317b6",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*) from \"caracteristiques_postgis\" c, \"lieux_postgis\" l where c.\"Num_Acc\" \u003d l.\"Num_Acc\" and (l.catr\u003d\u0027autoroute\u0027)",
+        "expandedSql": "select count(*) from \"caracteristiques_postgis\" c, \"lieux_postgis\" l where c.\"Num_Acc\" \u003d l.\"Num_Acc\" and (l.catr\u003d\u0027autoroute\u0027)"
       }
     ]
   }
