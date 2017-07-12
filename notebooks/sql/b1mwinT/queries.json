@@ -616,6 +616,28 @@
         },
         "sql": "select v.\"Num_Acc\", v.senc, l.catr from \"vehicules_pg\" v, \"lieux_postgis\" l where v.\"Num_Acc\" \u003d l.\"Num_Acc\"",
         "expandedSql": "select v.\"Num_Acc\", v.senc, l.catr from \"vehicules_pg\" v, \"lieux_postgis\" l where v.\"Num_Acc\" \u003d l.\"Num_Acc\""
+      },
+      {
+        "mode": "SQL",
+        "id": "jOq302fZ4V3o",
+        "runOn": 1499859455891,
+        "runIn": 365,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "QRRCWf89XUs9qRAw",
+        "hash": "6448dfb992a212105b56576b4b6d9af3",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select v.\"Num_Acc\", v.senc, l.catr from \"vehicules_pg\" v, \"lieux_postgis\" l where v.\"Num_Acc\" \u003d l.\"Num_Acc\" and l.catr\u003d\u0027autoroute\u0027",
+        "expandedSql": "select v.\"Num_Acc\", v.senc, l.catr from \"vehicules_pg\" v, \"lieux_postgis\" l where v.\"Num_Acc\" \u003d l.\"Num_Acc\" and l.catr\u003d\u0027autoroute\u0027"
       }
     ],
     "c4bmgxjs6on": [
