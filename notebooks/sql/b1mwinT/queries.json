@@ -729,6 +729,30 @@
         "sql": "select * from \"caracteristiques_postgis\" where dep\u003d\u0027971\u0027;",
         "expandedSql": "select * from \"caracteristiques_postgis\" where dep\u003d\u0027971\u0027;"
       }
+    ],
+    "mukkotsrc3": [
+      {
+        "mode": "SQL",
+        "id": "ALZCAV9V2Mnv",
+        "runOn": 1499859713324,
+        "runIn": -1,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "aRVPYYaj3hR8XNXP",
+        "hash": "d0c290d046aba541437497d8de36ee79",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*) from \"caracteristiques_postgis\" c, \"lieux_postgis\" l where c.\"Num_Acc\" \u003d l.\"Num_Acc\" and (l.catr\u003d\u0027autoroute\u0027 or l.catr\u003d\u0027route nationale\u0027)",
+        "expandedSql": "select count(*) from \"caracteristiques_postgis\" c, \"lieux_postgis\" l where c.\"Num_Acc\" \u003d l.\"Num_Acc\" and (l.catr\u003d\u0027autoroute\u0027 or l.catr\u003d\u0027route nationale\u0027)"
+      }
     ]
   }
 }
