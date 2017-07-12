@@ -801,10 +801,10 @@
         "mode": "SQL",
         "id": "3PkJJRuiSIXv",
         "runOn": 1499859819712,
-        "runIn": 734,
+        "runIn": 849,
         "runBy": "chabouisfr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "KjR2t4kVylTs0iJ1",
         "hash": "61db0f3f2590d89d36929c0dbbc1d7ca",
         "querySettings": {
