@@ -682,6 +682,28 @@
         },
         "sql": "select v.senc, l.catr, count(*) from \"vehicules_pg\" v, \"lieux_postgis\" l where v.\"Num_Acc\" \u003d l.\"Num_Acc\" and (l.catr\u003d\u0027autoroute\u0027 or l.catr\u003d\u0027route nationale\u0027) group by v.senc, l.catr",
         "expandedSql": "select v.senc, l.catr, count(*) from \"vehicules_pg\" v, \"lieux_postgis\" l where v.\"Num_Acc\" \u003d l.\"Num_Acc\" and (l.catr\u003d\u0027autoroute\u0027 or l.catr\u003d\u0027route nationale\u0027) group by v.senc, l.catr"
+      },
+      {
+        "mode": "SQL",
+        "id": "6tjGZgHBJVPa",
+        "runOn": 1499859555744,
+        "runIn": 861,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "BIDg2GPQv1xSUH5o",
+        "hash": "d7e955f55db13504de483427f5a0a63c",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select l.catr, v.senc, count(*) from \"vehicules_pg\" v, \"lieux_postgis\" l where v.\"Num_Acc\" \u003d l.\"Num_Acc\" and (l.catr\u003d\u0027autoroute\u0027 or l.catr\u003d\u0027route nationale\u0027) group by v.senc, l.catr order by catr, senc",
+        "expandedSql": "select l.catr, v.senc, count(*) from \"vehicules_pg\" v, \"lieux_postgis\" l where v.\"Num_Acc\" \u003d l.\"Num_Acc\" and (l.catr\u003d\u0027autoroute\u0027 or l.catr\u003d\u0027route nationale\u0027) group by v.senc, l.catr order by catr, senc"
       }
     ],
     "c4bmgxjs6on": [
