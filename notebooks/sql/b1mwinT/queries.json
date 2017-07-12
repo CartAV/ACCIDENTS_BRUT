@@ -572,6 +572,28 @@
         },
         "sql": "select \"Num_Acc\", senc from \"vehicules_pg\" v, \"caracteristiques_postgis\" c where v.\"Num_Acc\" \u003d c.\"Num_Acc\"",
         "expandedSql": "select \"Num_Acc\", senc from \"vehicules_pg\" v, \"caracteristiques_postgis\" c where v.\"Num_Acc\" \u003d c.\"Num_Acc\""
+      },
+      {
+        "mode": "SQL",
+        "id": "2mTdDBSAK3DT",
+        "runOn": 1499859416552,
+        "runIn": 45,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "YVhsvuyc1Wyw65Xj",
+        "hash": "639dd90b03a360c21c0977a81e5d3846",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select v.\"Num_Acc\", v.senc, c.catr from \"vehicules_pg\" v, \"caracteristiques_postgis\" c where v.\"Num_Acc\" \u003d c.\"Num_Acc\"",
+        "expandedSql": "select v.\"Num_Acc\", v.senc, c.catr from \"vehicules_pg\" v, \"caracteristiques_postgis\" c where v.\"Num_Acc\" \u003d c.\"Num_Acc\""
       }
     ],
     "c4bmgxjs6on": [
