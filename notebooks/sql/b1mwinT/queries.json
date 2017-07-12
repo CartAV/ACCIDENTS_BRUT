@@ -665,10 +665,10 @@
         "mode": "SQL",
         "id": "ojv9tLKvg9rY",
         "runOn": 1499859524500,
-        "runIn": 231,
+        "runIn": 861,
         "runBy": "chabouisfr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "5OqhkXf6fpWa9hxx",
         "hash": "295c6558c62bc439f9f681de5ce37e5b",
         "querySettings": {
