@@ -506,6 +506,28 @@
         },
         "sql": "select senc, count(*) from \"vehicules_pg\" group by senc",
         "expandedSql": "select senc, count(*) from \"vehicules_pg\" group by senc"
+      },
+      {
+        "mode": "SQL",
+        "id": "OdApwWFOFnKZ",
+        "runOn": 1499859345330,
+        "runIn": 687,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "WApHPvc4P9XmsTOb",
+        "hash": "4a16b655cebf547ce7bade7226d7358b",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select Num_Acc, senc from \"vehicules_pg\"",
+        "expandedSql": "select Num_Acc, senc from \"vehicules_pg\""
       }
     ],
     "c4bmgxjs6on": [
