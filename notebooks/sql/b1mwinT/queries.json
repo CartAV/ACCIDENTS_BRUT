@@ -550,6 +550,28 @@
         },
         "sql": "select \"Num_Acc\", senc from \"vehicules_pg\"",
         "expandedSql": "select \"Num_Acc\", senc from \"vehicules_pg\""
+      },
+      {
+        "mode": "SQL",
+        "id": "iqrUSJZdjM5V",
+        "runOn": 1499859396571,
+        "runIn": 46,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "S6ougGpV3CYmz4KU",
+        "hash": "7a78ba8abf3e2b617cf73791e1620a6d",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select \"Num_Acc\", senc from \"vehicules_pg\" v, \"caracteristiques_postgis\" c where v.\"Num_Acc\" \u003d c.\"Num_Acc\"",
+        "expandedSql": "select \"Num_Acc\", senc from \"vehicules_pg\" v, \"caracteristiques_postgis\" c where v.\"Num_Acc\" \u003d c.\"Num_Acc\""
       }
     ],
     "c4bmgxjs6on": [
