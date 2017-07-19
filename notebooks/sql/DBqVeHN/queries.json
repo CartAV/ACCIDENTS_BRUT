@@ -1,0 +1,28 @@
+{
+  "queries": {
+    "mog5gfufnfs": [
+      {
+        "mode": "SQL",
+        "id": "VwtlaarYq0yL",
+        "runOn": 1500471095166,
+        "runIn": -1,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "y0U70cEBSsqSybhb",
+        "hash": "31b3e8e53c32552690606cb0e0510856",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"vehicules_vertica\" where \"Num_Acc\" \u003d \u0027201300010686\u0027",
+        "expandedSql": "select * from \"vehicules_vertica\" where \"Num_Acc\" \u003d \u0027201300010686\u0027"
+      }
+    ]
+  }
+}
