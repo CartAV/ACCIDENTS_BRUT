@@ -132,6 +132,28 @@
         },
         "sql": "select * from \"lieux_vertica\" l, \"caracteristiques_vertica\" c where l.\"Num_Acc\" \u003d c.\"Num_Acc\" ",
         "expandedSql": "select * from \"lieux_vertica\" l, \"caracteristiques_vertica\" c where l.\"Num_Acc\" \u003d c.\"Num_Acc\" "
+      },
+      {
+        "mode": "SQL",
+        "id": "vKkseAYX68D5",
+        "runOn": 1501244042628,
+        "runIn": 664,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "mQwFvS1A2BQi8vA6",
+        "hash": "43dfa42ceadaf960860b521615f22412",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"lieux_vertica\" l, \"caracteristiques_vertica\" c where l.\"Num_Acc\" \u003d c.\"Num_Acc\" and (c.adr like \u0027%PERIPH%\u0027 or c.adr like \u0027%BP%\u0027) and c.dep \u003d \u0027750\u0027",
+        "expandedSql": "select * from \"lieux_vertica\" l, \"caracteristiques_vertica\" c where l.\"Num_Acc\" \u003d c.\"Num_Acc\" and (c.adr like \u0027%PERIPH%\u0027 or c.adr like \u0027%BP%\u0027) and c.dep \u003d \u0027750\u0027"
       }
     ]
   }
