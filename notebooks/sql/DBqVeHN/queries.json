@@ -176,6 +176,28 @@
         },
         "sql": "select pr from \"lieux_vertica\" l, \"caracteristiques_vertica\" c where l.\"Num_Acc\" \u003d c.\"Num_Acc\" and (c.adr like \u0027%PERIPH%\u0027 or c.adr like \u0027%BP%\u0027) and c.dep \u003d \u0027750\u0027 group by l.pr",
         "expandedSql": "select pr from \"lieux_vertica\" l, \"caracteristiques_vertica\" c where l.\"Num_Acc\" \u003d c.\"Num_Acc\" and (c.adr like \u0027%PERIPH%\u0027 or c.adr like \u0027%BP%\u0027) and c.dep \u003d \u0027750\u0027 group by l.pr"
+      },
+      {
+        "mode": "SQL",
+        "id": "K2W73DMZq5kM",
+        "runOn": 1501244097049,
+        "runIn": 363,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "akUbhaWG6shnwhMO",
+        "hash": "57c0c232d39940ec7021ff53fbbd8ea4",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select pr, count(pr) from \"lieux_vertica\" l, \"caracteristiques_vertica\" c where l.\"Num_Acc\" \u003d c.\"Num_Acc\" and (c.adr like \u0027%PERIPH%\u0027 or c.adr like \u0027%BP%\u0027) and c.dep \u003d \u0027750\u0027 group by l.pr order by count desc",
+        "expandedSql": "select pr, count(pr) from \"lieux_vertica\" l, \"caracteristiques_vertica\" c where l.\"Num_Acc\" \u003d c.\"Num_Acc\" and (c.adr like \u0027%PERIPH%\u0027 or c.adr like \u0027%BP%\u0027) and c.dep \u003d \u0027750\u0027 group by l.pr order by count desc"
       }
     ]
   }
