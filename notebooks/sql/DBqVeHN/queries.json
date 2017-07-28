@@ -88,6 +88,28 @@
         },
         "sql": "select * from \"lieux_vertica\" l, \"caracteristiques_vertica\" c where l.\"Num_Acc\" \u003d c.\"Num_Acc\" and c.dep \u003d \u002775\u0027",
         "expandedSql": "select * from \"lieux_vertica\" l, \"caracteristiques_vertica\" c where l.\"Num_Acc\" \u003d c.\"Num_Acc\" and c.dep \u003d \u002775\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "BpKBoXix9JAc",
+        "runOn": 1501244013877,
+        "runIn": 205,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "Yk0RqpbcRMBMww6g",
+        "hash": "043f150c47aaf1c887e3f174054bbd63",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"lieux_vertica\" l, \"caracteristiques_vertica\" c where l.\"Num_Acc\" \u003d c.\"Num_Acc\" and c.dep \u003d 75",
+        "expandedSql": "select * from \"lieux_vertica\" l, \"caracteristiques_vertica\" c where l.\"Num_Acc\" \u003d c.\"Num_Acc\" and c.dep \u003d 75"
       }
     ]
   }
