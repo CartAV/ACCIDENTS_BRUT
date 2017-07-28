@@ -22,6 +22,28 @@
         },
         "sql": "select * from \"vehicules_vertica\" where \"Num_Acc\" \u003d \u0027201300010686\u0027",
         "expandedSql": "select * from \"vehicules_vertica\" where \"Num_Acc\" \u003d \u0027201300010686\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "wuphKfcB7xV5",
+        "runOn": 1501243978861,
+        "runIn": 67,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "7y2BdA80Ri63W83t",
+        "hash": "8bafc3c383bf5a5e6dcbaf3412fb3c2d",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"lieux_vertica\" l, \"caracteristiques_vertica\" c where l.\"Num_Acc\" \u003d c.\"Num_Acc\" and (c.adr like \u0027%PERIPH%\u0027 or c.adr like \u0027%BP%\u0027) and c.dep \u003d \u002775\u0027",
+        "expandedSql": "select * from \"lieux_vertica\" l, \"caracteristiques_vertica\" c where l.\"Num_Acc\" \u003d c.\"Num_Acc\" and (c.adr like \u0027%PERIPH%\u0027 or c.adr like \u0027%BP%\u0027) and c.dep \u003d \u002775\u0027"
       }
     ]
   }
