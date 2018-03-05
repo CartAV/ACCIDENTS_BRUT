@@ -1,0 +1,84 @@
+{
+  "virtualInputs": [
+    {
+      "index": 0,
+      "originLabel": "caracteristiques_postgis",
+      "preFilter": {
+        "enabled": false,
+        "distinct": false
+      }
+    },
+    {
+      "index": 1,
+      "originLabel": "PROCEAWEBACCIDENTSBAAC.proceaweb_caracteristiques",
+      "preFilter": {
+        "enabled": false,
+        "distinct": false
+      }
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL",
+      "inheritConf": "default"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      },
+      "pipelineAllowStart": true,
+      "overwriteOutputSchema": false,
+      "readParams": {
+        "map": {}
+      },
+      "useGlobalMetastore": false
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true
+  },
+  "postFilter": {
+    "enabled": false,
+    "distinct": false
+  },
+  "originColumnName": "original_dataset",
+  "selectedColumns": [
+    "Num_Acc",
+    "an",
+    "mois",
+    "jour",
+    "hrmn",
+    "lum",
+    "agg",
+    "int",
+    "atm",
+    "col",
+    "com",
+    "adr",
+    "gps",
+    "lat",
+    "long",
+    "dep",
+    "Code Unité",
+    "Numéro P.V.",
+    "Numéro de feuillet",
+    "Organisme",
+    "Heure",
+    "Minute",
+    "date",
+    "Coordonnées GPS",
+    "Id BAAC 2002",
+    "inconnu1",
+    "inconnu2",
+    "inconnu3",
+    "inconnu4"
+  ],
+  "addOriginColumn": false,
+  "mode": "UNION"
+}
