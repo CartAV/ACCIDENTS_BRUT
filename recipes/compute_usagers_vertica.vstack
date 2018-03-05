@@ -1,0 +1,87 @@
+{
+  "virtualInputs": [
+    {
+      "index": 0,
+      "originLabel": "usagers_postgis",
+      "preFilter": {
+        "enabled": false,
+        "distinct": false
+      }
+    },
+    {
+      "index": 1,
+      "originLabel": "PROCEAWEBACCIDENTSBAAC.proceaweb_usagers",
+      "preFilter": {
+        "enabled": false,
+        "distinct": false
+      }
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL",
+      "inheritConf": "default"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      },
+      "pipelineAllowStart": true,
+      "overwriteOutputSchema": false,
+      "readParams": {
+        "map": {}
+      },
+      "useGlobalMetastore": false
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true
+  },
+  "postFilter": {
+    "enabled": false,
+    "distinct": false
+  },
+  "originColumnName": "original_dataset",
+  "selectedColumns": [
+    "Num_Acc",
+    "place",
+    "catu",
+    "grav",
+    "sexe",
+    "trajet",
+    "secu",
+    "locp",
+    "actp",
+    "etatp",
+    "an_nais",
+    "num_veh",
+    "Code Unité",
+    "Numéro P.V.",
+    "Numéro de feuillet",
+    "Organisme",
+    "resp",
+    "catso",
+    "depu",
+    "mo_nais",
+    "datn",
+    "facu",
+    "alco",
+    "alcot",
+    "perm",
+    "mo_perm",
+    "datp",
+    "an_perm",
+    "natinf1",
+    "natinf2",
+    "drogd",
+    "drogp"
+  ],
+  "addOriginColumn": false,
+  "mode": "UNION"
+}
