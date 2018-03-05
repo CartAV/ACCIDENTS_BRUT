@@ -43,11 +43,90 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
+  "originColumnName": "original_dataset",
   "postFilter": {
     "enabled": false,
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "Num_Acc",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "place",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "catu",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "grav",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "sexe",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "trajet",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "secu",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "locp",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "actp",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "etatp",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "an_nais",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "num_veh",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false
   },
-  "originColumnName": "original_dataset",
   "selectedColumns": [
     "Num_Acc",
     "place",
@@ -60,28 +139,8 @@
     "actp",
     "etatp",
     "an_nais",
-    "num_veh",
-    "Code Unité",
-    "Numéro P.V.",
-    "Numéro de feuillet",
-    "Organisme",
-    "resp",
-    "catso",
-    "depu",
-    "mo_nais",
-    "datn",
-    "facu",
-    "alco",
-    "alcot",
-    "perm",
-    "mo_perm",
-    "datp",
-    "an_perm",
-    "natinf1",
-    "natinf2",
-    "drogd",
-    "drogp"
+    "num_veh"
   ],
   "addOriginColumn": false,
-  "mode": "UNION"
+  "mode": "INTERSECT"
 }
