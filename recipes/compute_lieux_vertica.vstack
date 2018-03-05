@@ -43,11 +43,126 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
+  "originColumnName": "original_dataset",
   "postFilter": {
     "enabled": false,
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "Num_Acc",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "catr",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "voie",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "v1",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "v2",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "circ",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "nbv",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "pr",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "pr1",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "vosp",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "prof",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "plan",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "lartpc",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "larrout",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "surf",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "infra",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "situ",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "env1",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false
   },
-  "originColumnName": "original_dataset",
   "selectedColumns": [
     "Num_Acc",
     "catr",
@@ -66,13 +181,8 @@
     "surf",
     "infra",
     "situ",
-    "env1",
-    "Code Unité",
-    "Numéro P.V.",
-    "Numéro de feuillet",
-    "Organisme",
-    "Code route"
+    "env1"
   ],
   "addOriginColumn": false,
-  "mode": "UNION"
+  "mode": "INTERSECT"
 }
