@@ -13,16 +13,26 @@
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
   "partitioning": {
     "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1488980937938
+    "lastModifiedOn": 1520420623931
   },
   "creationTag": {
     "versionNumber": 0,
@@ -37,6 +47,7 @@
   "params": {
     "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
     "connection": "postgis",
+    "notReadyIfEmpty": false,
     "mode": "table",
     "partitioned": false,
     "partitioningType": "custom",
@@ -45,11 +56,11 @@
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
-    "hasColsWithUnknownTz": false,
-    "readColsWithUnknownTzAsDates": false
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "userModified": false,
+    "userModified": true,
     "columns": [
       {
         "name": "Num_Acc",
@@ -58,8 +69,14 @@
         "maxLength": -1
       },
       {
-        "name": "place",
+        "name": "num_veh",
         "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "place",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -77,6 +94,12 @@
       },
       {
         "name": "sexe",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "an_nais",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -107,18 +130,6 @@
       },
       {
         "name": "etatp",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "an_nais",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "num_veh",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
