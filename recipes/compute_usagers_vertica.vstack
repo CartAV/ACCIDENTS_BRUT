@@ -2,7 +2,7 @@
   "virtualInputs": [
     {
       "index": 0,
-      "originLabel": "usagers_postgis",
+      "originLabel": "PROCEAWEBACCIDENTSBAAC.proceaweb_usagers",
       "preFilter": {
         "enabled": false,
         "distinct": false
@@ -10,11 +10,8 @@
     },
     {
       "index": 1,
-      "originLabel": "PROCEAWEBACCIDENTSBAAC.proceaweb_usagers",
-      "preFilter": {
-        "enabled": false,
-        "distinct": false
-      }
+      "originLabel": "usagers_postgis_baac",
+      "preFilter": {}
     }
   ],
   "engineParams": {
@@ -43,82 +40,81 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
-  "originColumnName": "original_dataset",
   "postFilter": {
     "enabled": false,
     "$status": {
       "schema": {
         "columns": [
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "Num_Acc",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "num_veh",
             "type": "string"
           },
           {
             "maxLength": -1,
             "timestampNoTzAsDate": false,
             "name": "place",
-            "type": "string"
+            "type": "bigint"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "catu",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "grav",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "sexe",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
-            "name": "trajet",
-            "type": "string"
-          },
-          {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
-            "name": "secu",
-            "type": "string"
-          },
-          {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
-            "name": "locp",
-            "type": "string"
-          },
-          {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
-            "name": "actp",
-            "type": "string"
-          },
-          {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
-            "name": "etatp",
-            "type": "string"
-          },
-          {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "an_nais",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
-            "name": "num_veh",
+            "name": "trajet",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "secu",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "locp",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "actp",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "etatp",
             "type": "string"
           }
         ],
@@ -127,19 +123,20 @@
     },
     "distinct": false
   },
+  "originColumnName": "original_dataset",
   "selectedColumns": [
     "Num_Acc",
+    "num_veh",
     "place",
     "catu",
     "grav",
     "sexe",
+    "an_nais",
     "trajet",
     "secu",
     "locp",
     "actp",
-    "etatp",
-    "an_nais",
-    "num_veh"
+    "etatp"
   ],
   "addOriginColumn": false,
   "mode": "INTERSECT"
