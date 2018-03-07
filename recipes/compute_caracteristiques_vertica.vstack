@@ -40,7 +40,6 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
-  "originColumnName": "original_dataset",
   "postFilter": {
     "enabled": false,
     "$status": {
@@ -65,10 +64,10 @@
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "an",
-            "type": "bigint"
+            "type": "string"
           },
           {
             "maxLength": 16200,
@@ -148,6 +147,7 @@
     },
     "distinct": false
   },
+  "originColumnName": "original_dataset",
   "selectedColumns": [
     "Num_Acc",
     "jour",
