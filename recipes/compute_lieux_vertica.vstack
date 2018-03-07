@@ -2,7 +2,7 @@
   "virtualInputs": [
     {
       "index": 0,
-      "originLabel": "lieux_postgis",
+      "originLabel": "PROCEAWEBACCIDENTSBAAC.proceaweb_lieux",
       "preFilter": {
         "enabled": false,
         "distinct": false
@@ -10,11 +10,8 @@
     },
     {
       "index": 1,
-      "originLabel": "PROCEAWEBACCIDENTSBAAC.proceaweb_lieux",
-      "preFilter": {
-        "enabled": false,
-        "distinct": false
-      }
+      "originLabel": "lieux_postgis_baac",
+      "preFilter": {}
     }
   ],
   "engineParams": {
@@ -43,115 +40,116 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
+  "originColumnName": "original_dataset",
   "postFilter": {
     "enabled": false,
     "$status": {
       "schema": {
         "columns": [
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "Num_Acc",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "catr",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "voie",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "v1",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "v2",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "circ",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "nbv",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
-            "name": "pr",
-            "type": "string"
-          },
-          {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
-            "name": "pr1",
-            "type": "string"
-          },
-          {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "vosp",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "prof",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "pr",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "pr1",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "plan",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "lartpc",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "larrout",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "surf",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "infra",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "situ",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "env1",
             "type": "string"
@@ -162,7 +160,6 @@
     },
     "distinct": false
   },
-  "originColumnName": "original_dataset",
   "selectedColumns": [
     "Num_Acc",
     "catr",
@@ -171,10 +168,10 @@
     "v2",
     "circ",
     "nbv",
-    "pr",
-    "pr1",
     "vosp",
     "prof",
+    "pr",
+    "pr1",
     "plan",
     "lartpc",
     "larrout",
