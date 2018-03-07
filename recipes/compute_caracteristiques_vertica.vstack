@@ -2,7 +2,7 @@
   "virtualInputs": [
     {
       "index": 0,
-      "originLabel": "caracteristiques_postgis",
+      "originLabel": "PROCEAWEBACCIDENTSBAAC.proceaweb_caracteristiques",
       "preFilter": {
         "enabled": false,
         "distinct": false
@@ -10,11 +10,8 @@
     },
     {
       "index": 1,
-      "originLabel": "PROCEAWEBACCIDENTSBAAC.proceaweb_caracteristiques",
-      "preFilter": {
-        "enabled": false,
-        "distinct": false
-      }
+      "originLabel": "caracteristiques_postgis_baac",
+      "preFilter": {}
     }
   ],
   "engineParams": {
@@ -43,25 +40,26 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
+  "originColumnName": "original_dataset",
   "postFilter": {
     "enabled": false,
     "$status": {
       "schema": {
         "columns": [
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "Num_Acc",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
-            "name": "an",
+            "name": "jour",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "mois",
             "type": "string"
@@ -69,79 +67,79 @@
           {
             "maxLength": -1,
             "timestampNoTzAsDate": false,
-            "name": "jour",
-            "type": "string"
+            "name": "an",
+            "type": "bigint"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "hrmn",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "lum",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
-            "name": "agg",
+            "name": "dep",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
-            "name": "int",
-            "type": "string"
-          },
-          {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
-            "name": "atm",
-            "type": "string"
-          },
-          {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
-            "name": "col",
-            "type": "string"
-          },
-          {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "com",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "agg",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "int",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "atm",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "col",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "adr",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "gps",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "lat",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "long",
-            "type": "string"
-          },
-          {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
-            "name": "dep",
             "type": "string"
           }
         ],
@@ -150,24 +148,23 @@
     },
     "distinct": false
   },
-  "originColumnName": "original_dataset",
   "selectedColumns": [
     "Num_Acc",
-    "an",
-    "mois",
     "jour",
+    "mois",
+    "an",
     "hrmn",
     "lum",
+    "dep",
+    "com",
     "agg",
     "int",
     "atm",
     "col",
-    "com",
     "adr",
     "gps",
     "lat",
-    "long",
-    "dep"
+    "long"
   ],
   "addOriginColumn": false,
   "mode": "INTERSECT"
