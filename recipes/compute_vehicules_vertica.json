@@ -11,11 +11,11 @@
     "main": {
       "items": [
         {
-          "ref": "vehicules_pg",
+          "ref": "PROCEAWEBACCIDENTSBAAC.proceaweb_vehicules",
           "deps": []
         },
         {
-          "ref": "PROCEAWEBACCIDENTSBAAC.proceaweb_vehicules",
+          "ref": "vehicule_postgis_baac",
           "deps": []
         }
       ]
@@ -32,11 +32,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1520274945694
+    "lastModifiedOn": 1520427842171
   },
   "creationTag": {
     "versionNumber": 0,

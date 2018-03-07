@@ -2,7 +2,7 @@
   "virtualInputs": [
     {
       "index": 0,
-      "originLabel": "vehicules_pg",
+      "originLabel": "PROCEAWEBACCIDENTSBAAC.proceaweb_vehicules",
       "preFilter": {
         "enabled": false,
         "distinct": false
@@ -10,11 +10,8 @@
     },
     {
       "index": 1,
-      "originLabel": "PROCEAWEBACCIDENTSBAAC.proceaweb_vehicules",
-      "preFilter": {
-        "enabled": false,
-        "distinct": false
-      }
+      "originLabel": "vehicule_postgis_baac",
+      "preFilter": {}
     }
   ],
   "engineParams": {
@@ -43,64 +40,63 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
-  "originColumnName": "original_dataset",
   "postFilter": {
     "enabled": false,
     "$status": {
       "schema": {
         "columns": [
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "Num_Acc",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "num_veh",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "senc",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "catv",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
-            "name": "occutc",
-            "type": "string"
-          },
-          {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "obs",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "obsm",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "choc",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "manv",
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
-            "name": "num_veh",
+            "name": "occutc",
             "type": "string"
           }
         ],
@@ -109,16 +105,17 @@
     },
     "distinct": false
   },
+  "originColumnName": "original_dataset",
   "selectedColumns": [
     "Num_Acc",
+    "num_veh",
     "senc",
     "catv",
-    "occutc",
     "obs",
     "obsm",
     "choc",
     "manv",
-    "num_veh"
+    "occutc"
   ],
   "addOriginColumn": false,
   "mode": "INTERSECT"
