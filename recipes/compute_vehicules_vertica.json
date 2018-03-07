@@ -25,18 +25,18 @@
     "main": {
       "items": [
         {
-          "ref": "vehicules_vertica",
+          "ref": "vehicules_pg",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1520427842171
+    "lastModifiedOn": 1520427866470
   },
   "creationTag": {
     "versionNumber": 0,
