@@ -13,16 +13,26 @@
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
   "partitioning": {
     "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1488982426592
+    "lastModifiedOn": 1520535699769
   },
   "creationTag": {
     "versionNumber": 0,
@@ -36,6 +46,7 @@
   ],
   "params": {
     "connection": "datalabmaster",
+    "notReadyIfEmpty": false,
     "mode": "table",
     "partitioned": false,
     "partitioningType": "custom",
@@ -44,14 +55,20 @@
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
-    "hasColsWithUnknownTz": false,
-    "readColsWithUnknownTzAsDates": false
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "userModified": false,
+    "userModified": true,
     "columns": [
       {
         "name": "Num_Acc",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "num_veh",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -64,12 +81,6 @@
       },
       {
         "name": "catv",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
-        "name": "occutc",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -99,7 +110,7 @@
         "maxLength": 16200
       },
       {
-        "name": "num_veh",
+        "name": "occutc",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
