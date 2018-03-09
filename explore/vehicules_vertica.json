@@ -23,9 +23,9 @@
             "conditions": [
               {
                 "input": "Num_Acc",
-                "operator": "regex",
+                "operator": "contains",
                 "col": "num_veh",
-                "string": "^00",
+                "string": "0001053",
                 "num": 0.0
               }
             ]
@@ -44,7 +44,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 1
+      "_refreshTrigger": 3
     },
     "vizSampling": {
       "autoRefreshSample": false,
