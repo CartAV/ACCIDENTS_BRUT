@@ -22,24 +22,10 @@
             "mode": "||",
             "conditions": [
               {
-                "input": "adr",
+                "input": "Num_Acc",
                 "operator": "contains",
                 "col": "an",
-                "string": "PERIPH",
-                "num": 0.0
-              },
-              {
-                "input": "adr",
-                "operator": "contains",
-                "col": "an",
-                "string": "BPE",
-                "num": 0.0
-              },
-              {
-                "input": "adr",
-                "operator": "contains",
-                "col": "an",
-                "string": "BPI",
+                "string": "000105300",
                 "num": 0.0
               }
             ]
@@ -47,6 +33,10 @@
         },
         "partitionSelectionMethod": "ALL",
         "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
         "samplingMethod": "HEAD_SEQUENTIAL",
         "maxRecords": 10000,
         "targetRatio": 0.02,
@@ -54,7 +44,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 1
+      "_refreshTrigger": 2
     },
     "vizSampling": {
       "autoRefreshSample": false,
