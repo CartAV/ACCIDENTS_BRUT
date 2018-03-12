@@ -1,4 +1,5 @@
 {
+  "engineType": "DSS",
   "virtualInputs": [
     {
       "index": 0,
@@ -34,12 +35,22 @@
       "pipelineAllowStart": true,
       "overwriteOutputSchema": false,
       "readParams": {
-        "map": {}
+        "map": {
+          "lieux_postgis_baac": {
+            "cache": false,
+            "repartition": 10
+          },
+          "PROCEAWEBACCIDENTSBAAC.proceaweb_lieux": {
+            "cache": false,
+            "repartition": 10
+          }
+        }
       },
       "useGlobalMetastore": false
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
+  "originColumnName": "original_dataset",
   "postFilter": {
     "enabled": false,
     "$status": {
@@ -159,7 +170,6 @@
     },
     "distinct": false
   },
-  "originColumnName": "original_dataset",
   "selectedColumns": [
     "Num_Acc",
     "catr",
