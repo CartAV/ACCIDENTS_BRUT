@@ -1,5 +1,4 @@
 {
-  "engineType": "DSS",
   "virtualInputs": [
     {
       "index": 0,
@@ -15,6 +14,7 @@
       "preFilter": {}
     }
   ],
+  "engineType": "DSS",
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -50,7 +50,6 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
-  "originColumnName": "original_dataset",
   "postFilter": {
     "enabled": false,
     "$status": {
@@ -170,6 +169,7 @@
     },
     "distinct": false
   },
+  "originColumnName": "original_dataset",
   "selectedColumns": [
     "Num_Acc",
     "catr",
