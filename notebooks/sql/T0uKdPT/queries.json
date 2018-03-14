@@ -66,6 +66,28 @@
         },
         "sql": "SELECT COUNT(DISTINCT \"Num_Acc\")\nFROM \"lieux_vertica\"",
         "expandedSql": "SELECT COUNT(DISTINCT \"Num_Acc\")\nFROM \"lieux_vertica\""
+      },
+      {
+        "mode": "SQL",
+        "id": "k1FpcVqXao4w",
+        "runOn": 1521026271737,
+        "runIn": 317,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "n52tSWum",
+        "hash": "6a08ee68dfde588f9b2ccac5afdbbb9b",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(DISTINCT \"Num_Acc\")\nFROM \"usagers_vertica\"",
+        "expandedSql": "SELECT COUNT(DISTINCT \"Num_Acc\")\nFROM \"usagers_vertica\""
       }
     ]
   }
