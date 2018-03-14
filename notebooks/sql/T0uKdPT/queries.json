@@ -88,6 +88,28 @@
         },
         "sql": "SELECT COUNT(DISTINCT \"Num_Acc\")\nFROM \"usagers_vertica\"",
         "expandedSql": "SELECT COUNT(DISTINCT \"Num_Acc\")\nFROM \"usagers_vertica\""
+      },
+      {
+        "mode": "SQL",
+        "id": "IPLoT0e0Su6d",
+        "runOn": 1521026321721,
+        "runIn": 303,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "8flr2jzU",
+        "hash": "2c50a95f9955d861185a4ca83cd1565c",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(*)\nFROM \"usagers_vertica\"",
+        "expandedSql": "SELECT COUNT(*)\nFROM \"usagers_vertica\""
       }
     ]
   }
