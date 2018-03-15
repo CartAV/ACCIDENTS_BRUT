@@ -5,11 +5,11 @@
   "name": "Accidents bruts",
   "active": false,
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1521109746549
+    "lastModifiedOn": 1521109826147
   },
   "checklists": {
     "checklists": []
@@ -24,38 +24,6 @@
   "reporters": [],
   "params": {
     "steps": [
-      {
-        "id": "build_0_true_d_caracteristiques_stacked_d_lieux_stacked_d_usagers_stacked_d_vehicules_stacked",
-        "type": "build_flowitem",
-        "name": "Build stacked",
-        "params": {
-          "builds": [
-            {
-              "type": "DATASET",
-              "itemId": "caracteristiques_stacked",
-              "partitionsSpec": ""
-            },
-            {
-              "type": "DATASET",
-              "itemId": "lieux_stacked",
-              "partitionsSpec": ""
-            },
-            {
-              "type": "DATASET",
-              "itemId": "usagers_stacked",
-              "partitionsSpec": ""
-            },
-            {
-              "type": "DATASET",
-              "itemId": "vehicules_stacked",
-              "partitionsSpec": ""
-            }
-          ],
-          "jobType": "RECURSIVE_BUILD",
-          "refreshHiveMetastore": true,
-          "proceedOnFailure": false
-        }
-      },
       {
         "id": "build_0_true_d_caracteristiques_postgis_d_lieux_postgis_d_usagers_postgis_d_vehicules_pg",
         "type": "build_flowitem",
