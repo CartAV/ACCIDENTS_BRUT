@@ -5,11 +5,11 @@
   "name": "Accidents bruts",
   "active": false,
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
-      "login": "dupontlau"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1521111032884
+    "lastModifiedOn": 1521642551281
   },
   "checklists": {
     "checklists": []
