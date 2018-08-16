@@ -111,6 +111,30 @@
         "sql": "SELECT COUNT(*)\nFROM \"usagers_vertica\"",
         "expandedSql": "SELECT COUNT(*)\nFROM \"usagers_vertica\""
       }
+    ],
+    "hcxbjsaq7ih": [
+      {
+        "mode": "SQL",
+        "id": "4Q5loKFSh6oA",
+        "runOn": 1534431932950,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "kfd5Iyy8",
+        "hash": "2e49f1f9503d561c08219fe6e80f4d95",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT LENGTH(Num_Acc)\nFROM \"caracteristiques_vertica\"",
+        "expandedSql": "SELECT LENGTH(Num_Acc)\nFROM \"caracteristiques_vertica\""
+      }
     ]
   }
 }
