@@ -177,6 +177,7 @@
             "filterType": "NUMERICAL_FACET",
             "column": "an",
             "columnType": "NUMERICAL",
+            "minValue": 18.0,
             "isA": "filter",
             "excludedValues": {},
             "explicitExclude": false
@@ -241,7 +242,7 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABGklEQVRoQ+2ZPRKCMBCFl4MAZ7GP3sAL2OmM0FjagDPaeQFvoOk9C3ARWwYWZg0JmvAomV3I2+/t8pOIFnZEIetNc/2uCrVqa4TgkIiDMBHB0rC0xxVAD6OHPbYvt3RYGpaGpf2uAHp47h7mKu7SQz8nDMEu8RKRU8ISepIYmzWAYJtDS0JPEjM7YdNFSfIkMRA8oQKiHjalIMmTxEzQ10v9S8Fprq9VoQ5jQk0LBcHclLZZzS417togzHjbJoTef2mbFwdhZnMLlja0dHx8nZrL+txOD3pKQ7D081AytAYeL73N5zmHllPCEDxgHy8IJ5m+1aXaj73bcjGmeXGmd02p7t/erxufZM9tXW4e7fPcmoLeEOeKuDjBH9NFDEdWv4WfAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAS0lEQVRoge3PQQ3AIADAQJxMJsb4z9o0wIMlzZ2Cdgz2PXO9fzdcZbjOcJ3hOsN1husM1xmuM1xnuM5wneE6w3WG6wzXGa4zDABHPgTiQyqaQZAjAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
