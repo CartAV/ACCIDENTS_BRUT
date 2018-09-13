@@ -157,6 +157,30 @@
         "sql": "SELECT LENGTH(Num_Acc), COUNT(*)\nFROM \"caracteristiques_vertica\"\nGROUP BY LENGTH(Num_Acc)",
         "expandedSql": "SELECT LENGTH(Num_Acc), COUNT(*)\nFROM \"caracteristiques_vertica\"\nGROUP BY LENGTH(Num_Acc)"
       }
+    ],
+    "90kcv9zfexe": [
+      {
+        "mode": "SQL",
+        "id": "2XxC3rKGHp5s",
+        "runOn": 1536848327120,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "a8q1do8p",
+        "hash": "6053db8c9ef3e52a911467f94fd76d75",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "\nSELECT /*+ label(estimated_raw_size)*/\n       public.anchor_table_schema,\n       public.used_compressed_gb,\n       public.used_compressed_gb * la.ratio AS raw_estimate_gb\nFROM   (SELECT ps.anchor_table_schema,\n               SUM(used_bytes) / ( 1024^3 ) AS used_compressed_gb\n        FROM   v_catalog.projections p\n               JOIN v_monitor.projection_storage ps\n                 ON ps.projection_id \u003d p.projection_id\n        WHERE  p.is_super_projection \u003d \u0027t\u0027\n        GROUP  BY ps.anchor_table_schema) public\n       CROSS JOIN (SELECT (SELECT database_size_bytes\n                           FROM   v_catalog.license_audits\n                           ORDER  BY audit_start_timestamp DESC\n                           LIMIT  1) / (SELECT SUM(used_bytes)\n                                        FROM   V_MONITOR.projection_storage) AS ratio) la\nORDER  BY public.used_compressed_gb DESC;\n ",
+        "expandedSql": "\nSELECT /*+ label(estimated_raw_size)*/\n       public.anchor_table_schema,\n       public.used_compressed_gb,\n       public.used_compressed_gb * la.ratio AS raw_estimate_gb\nFROM   (SELECT ps.anchor_table_schema,\n               SUM(used_bytes) / ( 1024^3 ) AS used_compressed_gb\n        FROM   v_catalog.projections p\n               JOIN v_monitor.projection_storage ps\n                 ON ps.projection_id \u003d p.projection_id\n        WHERE  p.is_super_projection \u003d \u0027t\u0027\n        GROUP  BY ps.anchor_table_schema) public\n       CROSS JOIN (SELECT (SELECT database_size_bytes\n                           FROM   v_catalog.license_audits\n                           ORDER  BY audit_start_timestamp DESC\n                           LIMIT  1) / (SELECT SUM(used_bytes)\n                                        FROM   V_MONITOR.projection_storage) AS ratio) la\nORDER  BY public.used_compressed_gb DESC;\n "
+      }
     ]
   }
 }
