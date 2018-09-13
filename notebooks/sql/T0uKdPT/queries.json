@@ -202,6 +202,28 @@
         },
         "sql": "SELECT \n       anchor_table_schema,\n       anchor_table_name,\n       \nFROM   v_monitor.projection_storage",
         "expandedSql": "SELECT \n       anchor_table_schema,\n       anchor_table_name,\n       \nFROM   v_monitor.projection_storage"
+      },
+      {
+        "mode": "SQL",
+        "id": "NQR4Mh6CYlCW",
+        "runOn": 1536848373346,
+        "runIn": 14,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "L3l6Tmuo",
+        "hash": "08c19ba0a8e6238d8759d089114c33d6",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT \n       anchor_table_schema,\n       anchor_table_name\n       \nFROM   v_monitor.projection_storage",
+        "expandedSql": "SELECT \n       anchor_table_schema,\n       anchor_table_name\n       \nFROM   v_monitor.projection_storage"
       }
     ]
   }
