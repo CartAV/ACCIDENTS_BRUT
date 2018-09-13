@@ -224,6 +224,28 @@
         },
         "sql": "SELECT \n       anchor_table_schema,\n       anchor_table_name\n       \nFROM   v_monitor.projection_storage",
         "expandedSql": "SELECT \n       anchor_table_schema,\n       anchor_table_name\n       \nFROM   v_monitor.projection_storage"
+      },
+      {
+        "mode": "SQL",
+        "id": "pBOctlKpyGmE",
+        "runOn": 1536848997477,
+        "runIn": 345,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "k67Pqhrl",
+        "hash": "ebb59546eba0af601424c2514fef0e74",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT SUM(used_compressed_gb) FROM\n(\nSELECT /*+ label(compressed_table_size)*/\n       anchor_table_schema,\n       anchor_table_name,\n       SUM(used_bytes) / ( 1024^3 ) AS used_compressed_gb\nFROM   v_monitor.projection_storage\nWHERE anchor_table_name LIKE \u0027%accident%\u0027\nOR anchor_table_name LIKE \u0027%pve%\u0027\nOR anchor_table_name LIKE \u0027%cartav%\u0027\nGROUP  BY anchor_table_schema,\n          anchor_table_name\nORDER  BY SUM(used_bytes) DESC\n) table_sizes",
+        "expandedSql": "SELECT SUM(used_compressed_gb) FROM\n(\nSELECT /*+ label(compressed_table_size)*/\n       anchor_table_schema,\n       anchor_table_name,\n       SUM(used_bytes) / ( 1024^3 ) AS used_compressed_gb\nFROM   v_monitor.projection_storage\nWHERE anchor_table_name LIKE \u0027%accident%\u0027\nOR anchor_table_name LIKE \u0027%pve%\u0027\nOR anchor_table_name LIKE \u0027%cartav%\u0027\nGROUP  BY anchor_table_schema,\n          anchor_table_name\nORDER  BY SUM(used_bytes) DESC\n) table_sizes"
       }
     ]
   }
