@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537362568279
+    "lastModifiedOn": 1537364178510
   },
   "creationTag": {
     "versionNumber": 0,
@@ -70,14 +70,6 @@
       },
       {
         "name": "voie",
-        "type": "string"
-      },
-      {
-        "name": "v1",
-        "type": "string"
-      },
-      {
-        "name": "v2",
         "type": "string"
       },
       {
@@ -119,6 +111,10 @@
       {
         "name": "situ",
         "type": "string"
+      },
+      {
+        "name": "Organisme",
+        "type": "bigint"
       }
     ],
     "userModified": true
