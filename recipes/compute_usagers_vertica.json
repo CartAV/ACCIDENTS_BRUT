@@ -17,6 +17,10 @@
         {
           "ref": "usagers_postgis_baac",
           "deps": []
+        },
+        {
+          "ref": "PROCEAWEBACCIDENTSBAAC.BAAC_daily_usager_id_prep",
+          "deps": []
         }
       ]
     }
@@ -32,11 +36,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
-      "login": "antoinefa"
+      "login": "dupontlau"
     },
-    "lastModifiedOn": 1520420626513
+    "lastModifiedOn": 1537361729130
   },
   "creationTag": {
     "versionNumber": 0,

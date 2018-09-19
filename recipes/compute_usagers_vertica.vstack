@@ -1,132 +1,8 @@
 {
-  "virtualInputs": [
-    {
-      "index": 0,
-      "originLabel": "PROCEAWEBACCIDENTSBAAC.proceaweb_usagers",
-      "preFilter": {
-        "enabled": false,
-        "distinct": false
-      }
-    },
-    {
-      "index": 1,
-      "originLabel": "usagers_postgis_baac",
-      "preFilter": {}
-    }
-  ],
-  "engineParams": {
-    "hive": {
-      "skipPrerunValidate": false,
-      "hiveconf": [],
-      "addDkuUdf": false,
-      "executionEngine": "HIVECLI_LOCAL",
-      "inheritConf": "default"
-    },
-    "impala": {
-      "forceStreamMode": true
-    },
-    "sparkSQL": {
-      "pipelineAllowMerge": true,
-      "sparkConfig": {
-        "inheritConf": "default",
-        "conf": []
-      },
-      "pipelineAllowStart": true,
-      "overwriteOutputSchema": false,
-      "readParams": {
-        "map": {}
-      },
-      "useGlobalMetastore": false
-    },
-    "lowerCaseSchemaIfEngineRequiresIt": true
-  },
+  "mode": "INTERSECT",
   "originColumnName": "original_dataset",
-  "postFilter": {
-    "enabled": false,
-    "$status": {
-      "schema": {
-        "columns": [
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "Num_Acc",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "num_veh",
-            "type": "string"
-          },
-          {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
-            "name": "place",
-            "type": "bigint"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "catu",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "grav",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "sexe",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "an_nais",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "trajet",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "secu",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "locp",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "actp",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "etatp",
-            "type": "string"
-          }
-        ],
-        "userModified": false
-      }
-    },
-    "distinct": false
-  },
   "selectedColumns": [
     "Num_Acc",
-    "num_veh",
     "place",
     "catu",
     "grav",
@@ -138,6 +14,116 @@
     "actp",
     "etatp"
   ],
-  "addOriginColumn": false,
-  "mode": "INTERSECT"
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true,
+      "useGlobalMetastore": false,
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "PROCEAWEBACCIDENTSBAAC.proceaweb_usagers",
+      "index": 0
+    },
+    {
+      "preFilter": {},
+      "originLabel": "usagers_postgis_baac",
+      "index": 1
+    },
+    {
+      "preFilter": {},
+      "originLabel": "PROCEAWEBACCIDENTSBAAC.BAAC_daily_usager_id_prep",
+      "index": 2
+    }
+  ],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "Num_Acc",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "place",
+            "type": "bigint"
+          },
+          {
+            "name": "catu",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "grav",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "sexe",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "an_nais",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "trajet",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "secu",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "locp",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "actp",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "etatp",
+            "type": "string",
+            "maxLength": 16200
+          }
+        ],
+        "userModified": false
+      }
+    },
+    "distinct": false,
+    "enabled": false
+  },
+  "addOriginColumn": false
 }
