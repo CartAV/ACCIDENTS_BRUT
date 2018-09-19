@@ -17,6 +17,10 @@
         {
           "ref": "caracteristiques_postgis_baac",
           "deps": []
+        },
+        {
+          "ref": "PROCEAWEBACCIDENTSBAAC.BAAC_daily_caracteristique_id_prep",
+          "deps": []
         }
       ]
     }
@@ -32,11 +36,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1521035013607
+    "lastModifiedOn": 1537362905449
   },
   "creationTag": {
     "versionNumber": 0,

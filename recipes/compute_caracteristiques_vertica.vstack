@@ -1,153 +1,6 @@
 {
-  "virtualInputs": [
-    {
-      "index": 0,
-      "originLabel": "PROCEAWEBACCIDENTSBAAC.proceaweb_caracteristiques",
-      "preFilter": {
-        "enabled": false,
-        "distinct": false
-      }
-    },
-    {
-      "index": 1,
-      "originLabel": "caracteristiques_postgis_baac",
-      "preFilter": {}
-    }
-  ],
-  "engineParams": {
-    "hive": {
-      "skipPrerunValidate": false,
-      "hiveconf": [],
-      "addDkuUdf": false,
-      "executionEngine": "HIVECLI_LOCAL",
-      "inheritConf": "default"
-    },
-    "impala": {
-      "forceStreamMode": true
-    },
-    "sparkSQL": {
-      "pipelineAllowMerge": true,
-      "sparkConfig": {
-        "inheritConf": "default",
-        "conf": []
-      },
-      "pipelineAllowStart": true,
-      "overwriteOutputSchema": false,
-      "readParams": {
-        "map": {}
-      },
-      "useGlobalMetastore": false
-    },
-    "lowerCaseSchemaIfEngineRequiresIt": true
-  },
+  "mode": "INTERSECT",
   "originColumnName": "original_dataset",
-  "postFilter": {
-    "enabled": false,
-    "$status": {
-      "schema": {
-        "columns": [
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "Num_Acc",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "jour",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "mois",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "an",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "hrmn",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "lum",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "dep",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "com",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "agg",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "int",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "atm",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "col",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "adr",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "gps",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "lat",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "long",
-            "type": "string"
-          }
-        ],
-        "userModified": false
-      }
-    },
-    "distinct": false
-  },
   "selectedColumns": [
     "Num_Acc",
     "jour",
@@ -166,6 +19,142 @@
     "lat",
     "long"
   ],
-  "addOriginColumn": false,
-  "mode": "INTERSECT"
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true,
+      "useGlobalMetastore": false,
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "PROCEAWEBACCIDENTSBAAC.proceaweb_caracteristiques",
+      "index": 0
+    },
+    {
+      "preFilter": {},
+      "originLabel": "caracteristiques_postgis_baac",
+      "index": 1
+    },
+    {
+      "preFilter": {},
+      "originLabel": "PROCEAWEBACCIDENTSBAAC.BAAC_daily_caracteristique_id_prep",
+      "index": 2
+    }
+  ],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "Num_Acc",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "jour",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "mois",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "an",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "hrmn",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "lum",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "dep",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "com",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "agg",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "int",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "atm",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "col",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "adr",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "gps",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "lat",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "long",
+            "type": "string",
+            "maxLength": 16200
+          }
+        ],
+        "userModified": false
+      }
+    },
+    "distinct": false,
+    "enabled": false
+  },
+  "addOriginColumn": false
 }
