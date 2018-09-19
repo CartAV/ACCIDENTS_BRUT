@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537362402285
+    "lastModifiedOn": 1537362568279
   },
   "creationTag": {
     "versionNumber": 0,
@@ -89,14 +89,6 @@
         "type": "string"
       },
       {
-        "name": "vosp",
-        "type": "string"
-      },
-      {
-        "name": "prof",
-        "type": "string"
-      },
-      {
         "name": "pr",
         "type": "string"
       },
@@ -105,15 +97,15 @@
         "type": "string"
       },
       {
+        "name": "vosp",
+        "type": "string"
+      },
+      {
+        "name": "prof",
+        "type": "string"
+      },
+      {
         "name": "plan",
-        "type": "string"
-      },
-      {
-        "name": "lartpc",
-        "type": "string"
-      },
-      {
-        "name": "larrout",
         "type": "string"
       },
       {
@@ -126,10 +118,6 @@
       },
       {
         "name": "situ",
-        "type": "string"
-      },
-      {
-        "name": "env1",
         "type": "string"
       }
     ],
