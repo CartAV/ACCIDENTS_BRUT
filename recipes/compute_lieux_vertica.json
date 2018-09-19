@@ -17,6 +17,10 @@
         {
           "ref": "lieux_postgis_baac",
           "deps": []
+        },
+        {
+          "ref": "PROCEAWEBACCIDENTSBAAC.BAAC_daily_lieu_id_prep",
+          "deps": []
         }
       ]
     }
@@ -32,11 +36,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1521034904915
+    "lastModifiedOn": 1537362065455
   },
   "creationTag": {
     "versionNumber": 0,
