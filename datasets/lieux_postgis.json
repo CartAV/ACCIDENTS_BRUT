@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537362361599
+    "lastModifiedOn": 1537362402285
   },
   "creationTag": {
     "versionNumber": 0,
@@ -86,7 +86,7 @@
       },
       {
         "name": "nbv",
-        "type": "bigint"
+        "type": "string"
       },
       {
         "name": "vosp",
@@ -98,11 +98,11 @@
       },
       {
         "name": "pr",
-        "type": "bigint"
+        "type": "string"
       },
       {
         "name": "pr1",
-        "type": "bigint"
+        "type": "string"
       },
       {
         "name": "plan",
@@ -175,6 +175,10 @@
           },
           "partitionSelectionMethod": "ALL",
           "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
           "samplingMethod": "FULL",
           "maxRecords": -1,
           "targetRatio": 0.02,
