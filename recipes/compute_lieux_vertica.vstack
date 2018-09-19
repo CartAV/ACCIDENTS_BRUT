@@ -9,17 +9,14 @@
     "v2",
     "circ",
     "nbv",
-    "vosp",
-    "prof",
     "pr",
     "pr1",
+    "vosp",
+    "prof",
     "plan",
-    "lartpc",
-    "larrout",
     "surf",
     "infra",
-    "situ",
-    "env1"
+    "situ"
   ],
   "engineParams": {
     "hive": {
@@ -59,21 +56,18 @@
   "engineType": "DSS",
   "virtualInputs": [
     {
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "originLabel": "PROCEAWEBACCIDENTSBAAC.proceaweb_lieux",
+      "preFilter": {},
+      "originLabel": "lieux_postgis_baac",
       "index": 0
     },
     {
       "preFilter": {},
-      "originLabel": "lieux_postgis_baac",
+      "originLabel": "PROCEAWEBACCIDENTSBAAC.BAAC_daily_lieu_id_prep",
       "index": 1
     },
     {
       "preFilter": {},
-      "originLabel": "PROCEAWEBACCIDENTSBAAC.BAAC_daily_lieu_id_prep",
+      "originLabel": "PROCEAWEBACCIDENTSBAAC.proceaweb_lieux",
       "index": 2
     }
   ],
@@ -107,7 +101,15 @@
           },
           {
             "name": "nbv",
-            "type": "bigint"
+            "type": "string"
+          },
+          {
+            "name": "pr",
+            "type": "string"
+          },
+          {
+            "name": "pr1",
+            "type": "string"
           },
           {
             "name": "vosp",
@@ -118,23 +120,7 @@
             "type": "string"
           },
           {
-            "name": "pr",
-            "type": "bigint"
-          },
-          {
-            "name": "pr1",
-            "type": "bigint"
-          },
-          {
             "name": "plan",
-            "type": "string"
-          },
-          {
-            "name": "lartpc",
-            "type": "string"
-          },
-          {
-            "name": "larrout",
             "type": "string"
           },
           {
@@ -147,10 +133,6 @@
           },
           {
             "name": "situ",
-            "type": "string"
-          },
-          {
-            "name": "env1",
             "type": "string"
           }
         ],
