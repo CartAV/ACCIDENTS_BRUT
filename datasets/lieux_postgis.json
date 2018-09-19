@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537364178510
+    "lastModifiedOn": 1537364201371
   },
   "creationTag": {
     "versionNumber": 0,
@@ -73,6 +73,14 @@
         "type": "string"
       },
       {
+        "name": "v1",
+        "type": "string"
+      },
+      {
+        "name": "v2",
+        "type": "string"
+      },
+      {
         "name": "circ",
         "type": "string"
       },
@@ -101,6 +109,14 @@
         "type": "string"
       },
       {
+        "name": "lartpc",
+        "type": "string"
+      },
+      {
+        "name": "larrout",
+        "type": "string"
+      },
+      {
         "name": "surf",
         "type": "string"
       },
@@ -110,6 +126,10 @@
       },
       {
         "name": "situ",
+        "type": "string"
+      },
+      {
+        "name": "env1",
         "type": "string"
       },
       {
