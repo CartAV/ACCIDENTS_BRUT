@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537362272304
+    "lastModifiedOn": 1537362361599
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,12 +85,24 @@
         "type": "string"
       },
       {
+        "name": "nbv",
+        "type": "bigint"
+      },
+      {
         "name": "vosp",
         "type": "string"
       },
       {
         "name": "prof",
         "type": "string"
+      },
+      {
+        "name": "pr",
+        "type": "bigint"
+      },
+      {
+        "name": "pr1",
+        "type": "bigint"
       },
       {
         "name": "plan",
