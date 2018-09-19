@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537362134489
+    "lastModifiedOn": 1537362136742
   },
   "creationTag": {
     "versionNumber": 0,
@@ -93,7 +93,8 @@
       },
       {
         "name": "pr1",
-        "type": "string"
+        "type": "string",
+        "meaning": "Text"
       },
       {
         "name": "vosp",
