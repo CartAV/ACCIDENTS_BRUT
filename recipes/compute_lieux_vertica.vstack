@@ -8,11 +8,8 @@
     "v1",
     "v2",
     "circ",
-    "nbv",
     "vosp",
     "prof",
-    "pr",
-    "pr1",
     "plan",
     "lartpc",
     "larrout",
@@ -106,24 +103,12 @@
             "type": "string"
           },
           {
-            "name": "nbv",
-            "type": "bigint"
-          },
-          {
             "name": "vosp",
             "type": "string"
           },
           {
             "name": "prof",
             "type": "string"
-          },
-          {
-            "name": "pr",
-            "type": "bigint"
-          },
-          {
-            "name": "pr1",
-            "type": "bigint"
           },
           {
             "name": "plan",
