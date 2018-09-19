@@ -1,8 +1,9 @@
 {
-  "mode": "INTERSECT",
+  "mode": "CUSTOM",
   "originColumnName": "original_dataset",
   "selectedColumns": [
     "Num_Acc",
+    "Organisme",
     "jour",
     "mois",
     "an",
@@ -71,83 +72,71 @@
         "columns": [
           {
             "name": "Num_Acc",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
+          },
+          {
+            "name": "Organisme",
+            "type": "string"
           },
           {
             "name": "jour",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "mois",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "an",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "hrmn",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "lum",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "dep",
-            "type": "string",
-            "maxLength": 16200
+            "type": "bigint"
           },
           {
             "name": "com",
-            "type": "string",
-            "maxLength": 16200
+            "type": "bigint"
           },
           {
             "name": "agg",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "int",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "atm",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "col",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "adr",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "gps",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "lat",
-            "type": "string",
-            "maxLength": 16200
+            "type": "bigint"
           },
           {
             "name": "long",
-            "type": "string",
-            "maxLength": 16200
+            "type": "bigint"
           }
         ],
         "userModified": false
