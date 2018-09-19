@@ -1,111 +1,6 @@
 {
-  "virtualInputs": [
-    {
-      "index": 0,
-      "originLabel": "PROCEAWEBACCIDENTSBAAC.proceaweb_vehicules",
-      "preFilter": {
-        "enabled": false,
-        "distinct": false
-      }
-    },
-    {
-      "index": 1,
-      "originLabel": "vehicule_postgis_baac",
-      "preFilter": {}
-    }
-  ],
-  "engineParams": {
-    "hive": {
-      "skipPrerunValidate": false,
-      "hiveconf": [],
-      "addDkuUdf": false,
-      "executionEngine": "HIVECLI_LOCAL",
-      "inheritConf": "default"
-    },
-    "impala": {
-      "forceStreamMode": true
-    },
-    "sparkSQL": {
-      "pipelineAllowMerge": true,
-      "sparkConfig": {
-        "inheritConf": "default",
-        "conf": []
-      },
-      "pipelineAllowStart": true,
-      "overwriteOutputSchema": false,
-      "readParams": {
-        "map": {}
-      },
-      "useGlobalMetastore": false
-    },
-    "lowerCaseSchemaIfEngineRequiresIt": true
-  },
+  "mode": "INTERSECT",
   "originColumnName": "original_dataset",
-  "postFilter": {
-    "enabled": false,
-    "$status": {
-      "schema": {
-        "columns": [
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "Num_Acc",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "num_veh",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "senc",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "catv",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "obs",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "obsm",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "choc",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "manv",
-            "type": "string"
-          },
-          {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "occutc",
-            "type": "string"
-          }
-        ],
-        "userModified": false
-      }
-    },
-    "distinct": false
-  },
   "selectedColumns": [
     "Num_Acc",
     "num_veh",
@@ -117,6 +12,107 @@
     "manv",
     "occutc"
   ],
-  "addOriginColumn": false,
-  "mode": "INTERSECT"
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true,
+      "useGlobalMetastore": false,
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "PROCEAWEBACCIDENTSBAAC.proceaweb_vehicules",
+      "index": 0
+    },
+    {
+      "preFilter": {},
+      "originLabel": "vehicule_postgis_baac",
+      "index": 1
+    },
+    {
+      "preFilter": {},
+      "originLabel": "PROCEAWEBACCIDENTSBAAC.BAAC_daily_vehicule_id_prep",
+      "index": 2
+    }
+  ],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "Num_Acc",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "num_veh",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "senc",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "catv",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "obs",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "obsm",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "choc",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "manv",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "occutc",
+            "type": "string",
+            "maxLength": 16200
+          }
+        ],
+        "userModified": false
+      }
+    },
+    "distinct": false,
+    "enabled": false
+  },
+  "addOriginColumn": false
 }

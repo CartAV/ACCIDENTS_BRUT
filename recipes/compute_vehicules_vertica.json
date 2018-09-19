@@ -17,6 +17,10 @@
         {
           "ref": "vehicule_postgis_baac",
           "deps": []
+        },
+        {
+          "ref": "PROCEAWEBACCIDENTSBAAC.BAAC_daily_vehicule_id_prep",
+          "deps": []
         }
       ]
     }
@@ -32,11 +36,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1521034831597
+    "lastModifiedOn": 1537361433114
   },
   "creationTag": {
     "versionNumber": 0,
