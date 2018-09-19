@@ -5,6 +5,8 @@
     "Num_Acc",
     "catr",
     "voie",
+    "v1",
+    "v2",
     "circ",
     "nbv",
     "pr",
@@ -12,9 +14,12 @@
     "vosp",
     "prof",
     "plan",
+    "lartpc",
+    "larrout",
     "surf",
     "infra",
     "situ",
+    "env1",
     "Organisme"
   ],
   "engineParams": {
@@ -87,6 +92,14 @@
             "type": "string"
           },
           {
+            "name": "v1",
+            "type": "string"
+          },
+          {
+            "name": "v2",
+            "type": "string"
+          },
+          {
             "name": "circ",
             "type": "string"
           },
@@ -115,6 +128,14 @@
             "type": "string"
           },
           {
+            "name": "lartpc",
+            "type": "string"
+          },
+          {
+            "name": "larrout",
+            "type": "string"
+          },
+          {
             "name": "surf",
             "type": "string"
           },
@@ -124,6 +145,10 @@
           },
           {
             "name": "situ",
+            "type": "string"
+          },
+          {
+            "name": "env1",
             "type": "string"
           },
           {
