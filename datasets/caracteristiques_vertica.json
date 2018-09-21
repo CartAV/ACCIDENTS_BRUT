@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
-      "login": "antoinefa"
+      "login": "dupontlau"
     },
-    "lastModifiedOn": 1520535774222
+    "lastModifiedOn": 1537540662868
   },
   "creationTag": {
     "versionNumber": 0,
@@ -48,7 +48,6 @@
     "connection": "datalabmaster",
     "notReadyIfEmpty": false,
     "mode": "table",
-    "partitioned": false,
     "partitioningType": "custom",
     "normalizeDoubles": true,
     "table": "caracteristiques_vertica",
@@ -59,105 +58,90 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "userModified": true,
     "columns": [
       {
         "name": "Num_Acc",
         "type": "string",
-        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "Organisme",
+        "type": "string",
         "maxLength": 16200
       },
       {
         "name": "jour",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "mois",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "an",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "hrmn",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "lum",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "dep",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
+        "type": "bigint"
       },
       {
         "name": "com",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
+        "type": "bigint"
       },
       {
         "name": "agg",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "int",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "atm",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "col",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "adr",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "gps",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "lat",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
+        "type": "bigint"
       },
       {
         "name": "long",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
+        "type": "bigint"
       }
-    ]
+    ],
+    "userModified": true
   },
   "metrics": {
     "probes": [
