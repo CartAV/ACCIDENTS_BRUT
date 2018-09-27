@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537540662868
+    "lastModifiedOn": 1538049336013
   },
   "creationTag": {
     "versionNumber": 0,
@@ -96,11 +96,13 @@
       },
       {
         "name": "dep",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "com",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "agg",
@@ -134,11 +136,13 @@
       },
       {
         "name": "lat",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "long",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       }
     ],
     "userModified": true
