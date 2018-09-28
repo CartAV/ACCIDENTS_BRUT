@@ -1,6 +1,6 @@
 {
   "mode": "INTERSECT",
-  "originColumnName": "original_dataset",
+  "originColumnName": "origin",
   "selectedColumns": [
     "Num_Acc",
     "place",
@@ -46,17 +46,17 @@
         "distinct": false,
         "enabled": false
       },
-      "originLabel": "PROCEAWEBACCIDENTSBAAC.proceaweb_usagers",
+      "originLabel": "txt",
       "index": 0
     },
     {
       "preFilter": {},
-      "originLabel": "usagers_postgis_baac",
+      "originLabel": "open",
       "index": 1
     },
     {
       "preFilter": {},
-      "originLabel": "PROCEAWEBACCIDENTSBAAC.BAAC_daily_usager_id_prep",
+      "originLabel": "xml",
       "index": 2
     }
   ],
@@ -117,6 +117,10 @@
             "name": "etatp",
             "type": "string",
             "maxLength": 16200
+          },
+          {
+            "name": "origin",
+            "type": "string"
           }
         ],
         "userModified": false
@@ -125,5 +129,5 @@
     "distinct": false,
     "enabled": false
   },
-  "addOriginColumn": false
+  "addOriginColumn": true
 }
