@@ -1,101 +1,5 @@
 {
-  "virtualInputs": [
-    {
-      "index": 0,
-      "originLabel": "lieux_2005",
-      "preFilter": {
-        "enabled": false,
-        "language": "GREL",
-        "distinct": false
-      }
-    },
-    {
-      "index": 1,
-      "originLabel": "lieux_2006",
-      "preFilter": {
-        "enabled": false,
-        "language": "GREL",
-        "distinct": false
-      }
-    },
-    {
-      "index": 2,
-      "originLabel": "lieux_2007",
-      "preFilter": {}
-    },
-    {
-      "index": 3,
-      "originLabel": "lieux_2008",
-      "preFilter": {}
-    },
-    {
-      "index": 4,
-      "originLabel": "lieux_2009",
-      "preFilter": {}
-    },
-    {
-      "index": 5,
-      "originLabel": "lieux_2010",
-      "preFilter": {}
-    },
-    {
-      "index": 6,
-      "originLabel": "lieux_2011",
-      "preFilter": {}
-    },
-    {
-      "index": 7,
-      "originLabel": "lieux_2012",
-      "preFilter": {}
-    },
-    {
-      "index": 8,
-      "originLabel": "lieux_2013",
-      "preFilter": {}
-    },
-    {
-      "index": 9,
-      "originLabel": "lieux_2014",
-      "preFilter": {}
-    },
-    {
-      "index": 10,
-      "originLabel": "lieux_2015",
-      "preFilter": {}
-    },
-    {
-      "index": 11,
-      "originLabel": "lieux_2016",
-      "preFilter": {}
-    }
-  ],
-  "engineParams": {
-    "hive": {
-      "hiveconf": [],
-      "addDkuUdf": false,
-      "executionEngine": "HIVECLI_LOCAL",
-      "useGlobalMetastore": false
-    },
-    "impala": {
-      "forceStreamMode": true
-    },
-    "sparkSQL": {
-      "sparkConfig": {
-        "inheritConf": "default",
-        "conf": []
-      },
-      "overwriteOutputSchema": true,
-      "readParams": {
-        "map": {}
-      }
-    },
-    "lowerCaseSchemaIfEngineRequiresIt": true
-  },
-  "postFilter": {
-    "enabled": false,
-    "language": "GREL",
-    "distinct": false
-  },
+  "mode": "UNION",
   "originColumnName": "original_dataset",
   "selectedColumns": [
     "Num_Acc",
@@ -117,6 +21,186 @@
     "situ",
     "env1"
   ],
-  "addOriginColumn": false,
-  "mode": "UNION"
+  "engineParams": {
+    "hive": {
+      "useGlobalMetastore": false,
+      "hiveconf": [],
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": true,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "language": "GREL",
+        "enabled": false
+      },
+      "originLabel": "lieux_2005",
+      "index": 0
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "language": "GREL",
+        "enabled": false
+      },
+      "originLabel": "lieux_2006",
+      "index": 1
+    },
+    {
+      "preFilter": {},
+      "originLabel": "lieux_2007",
+      "index": 2
+    },
+    {
+      "preFilter": {},
+      "originLabel": "lieux_2008",
+      "index": 3
+    },
+    {
+      "preFilter": {},
+      "originLabel": "lieux_2009",
+      "index": 4
+    },
+    {
+      "preFilter": {},
+      "originLabel": "lieux_2010",
+      "index": 5
+    },
+    {
+      "preFilter": {},
+      "originLabel": "lieux_2011",
+      "index": 6
+    },
+    {
+      "preFilter": {},
+      "originLabel": "lieux_2012",
+      "index": 7
+    },
+    {
+      "preFilter": {},
+      "originLabel": "lieux_2013",
+      "index": 8
+    },
+    {
+      "preFilter": {},
+      "originLabel": "lieux_2014",
+      "index": 9
+    },
+    {
+      "preFilter": {},
+      "originLabel": "lieux_2015",
+      "index": 10
+    },
+    {
+      "preFilter": {},
+      "originLabel": "lieux_2016",
+      "index": 11
+    },
+    {
+      "preFilter": {},
+      "originLabel": "lieux_2017",
+      "index": 12
+    }
+  ],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "Num_Acc",
+            "type": "string"
+          },
+          {
+            "name": "catr",
+            "type": "string"
+          },
+          {
+            "name": "voie",
+            "type": "string"
+          },
+          {
+            "name": "v1",
+            "type": "string"
+          },
+          {
+            "name": "v2",
+            "type": "string"
+          },
+          {
+            "name": "circ",
+            "type": "string"
+          },
+          {
+            "name": "nbv",
+            "type": "string"
+          },
+          {
+            "name": "pr",
+            "type": "string"
+          },
+          {
+            "name": "pr1",
+            "type": "string"
+          },
+          {
+            "name": "vosp",
+            "type": "string"
+          },
+          {
+            "name": "prof",
+            "type": "string"
+          },
+          {
+            "name": "plan",
+            "type": "string"
+          },
+          {
+            "name": "lartpc",
+            "type": "string"
+          },
+          {
+            "name": "larrout",
+            "type": "string"
+          },
+          {
+            "name": "surf",
+            "type": "string"
+          },
+          {
+            "name": "infra",
+            "type": "string"
+          },
+          {
+            "name": "situ",
+            "type": "string"
+          },
+          {
+            "name": "env1",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
+    "distinct": false,
+    "language": "GREL",
+    "enabled": false
+  },
+  "addOriginColumn": false
 }
