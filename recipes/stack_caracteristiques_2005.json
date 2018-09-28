@@ -6,6 +6,7 @@
     "kv": {}
   },
   "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
   "inputs": {
     "main": {
       "items": [
@@ -56,6 +57,10 @@
         {
           "ref": "caracteristiques_2016",
           "deps": []
+        },
+        {
+          "ref": "caracteristiques_2017",
+          "deps": []
         }
       ]
     }
@@ -71,11 +76,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "dupontlau"
     },
-    "lastModifiedOn": 1498640984438
+    "lastModifiedOn": 1538146420526
   },
   "tags": [],
   "checklists": {

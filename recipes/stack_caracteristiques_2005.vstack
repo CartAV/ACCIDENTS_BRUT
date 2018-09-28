@@ -1,101 +1,5 @@
 {
-  "virtualInputs": [
-    {
-      "index": 0,
-      "originLabel": "caracteristiques_2005",
-      "preFilter": {
-        "enabled": false,
-        "language": "GREL",
-        "distinct": false
-      }
-    },
-    {
-      "index": 1,
-      "originLabel": "caracteristiques_2006",
-      "preFilter": {
-        "enabled": false,
-        "language": "GREL",
-        "distinct": false
-      }
-    },
-    {
-      "index": 2,
-      "originLabel": "caracteristiques_2007",
-      "preFilter": {}
-    },
-    {
-      "index": 3,
-      "originLabel": "caracteristiques_2008",
-      "preFilter": {}
-    },
-    {
-      "index": 4,
-      "originLabel": "caracteristiques_2009",
-      "preFilter": {}
-    },
-    {
-      "index": 5,
-      "originLabel": "caracteristiques_2010",
-      "preFilter": {}
-    },
-    {
-      "index": 6,
-      "originLabel": "caracteristiques_2011",
-      "preFilter": {}
-    },
-    {
-      "index": 7,
-      "originLabel": "caracteristiques_2012",
-      "preFilter": {}
-    },
-    {
-      "index": 8,
-      "originLabel": "caracteristiques_2013",
-      "preFilter": {}
-    },
-    {
-      "index": 9,
-      "originLabel": "caracteristiques_2014",
-      "preFilter": {}
-    },
-    {
-      "index": 10,
-      "originLabel": "caracteristiques_2015",
-      "preFilter": {}
-    },
-    {
-      "index": 11,
-      "originLabel": "caracteristiques_2016",
-      "preFilter": {}
-    }
-  ],
-  "engineParams": {
-    "hive": {
-      "hiveconf": [],
-      "addDkuUdf": false,
-      "executionEngine": "HIVECLI_LOCAL",
-      "useGlobalMetastore": false
-    },
-    "impala": {
-      "forceStreamMode": true
-    },
-    "sparkSQL": {
-      "sparkConfig": {
-        "inheritConf": "default",
-        "conf": []
-      },
-      "overwriteOutputSchema": true,
-      "readParams": {
-        "map": {}
-      }
-    },
-    "lowerCaseSchemaIfEngineRequiresIt": true
-  },
-  "postFilter": {
-    "enabled": false,
-    "language": "GREL",
-    "distinct": false
-  },
+  "mode": "UNION",
   "originColumnName": "original_dataset",
   "selectedColumns": [
     "Num_Acc",
@@ -115,6 +19,178 @@
     "long",
     "dep"
   ],
-  "addOriginColumn": false,
-  "mode": "UNION"
+  "engineParams": {
+    "hive": {
+      "useGlobalMetastore": false,
+      "hiveconf": [],
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": true,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "language": "GREL",
+        "enabled": false
+      },
+      "originLabel": "caracteristiques_2005",
+      "index": 0
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "language": "GREL",
+        "enabled": false
+      },
+      "originLabel": "caracteristiques_2006",
+      "index": 1
+    },
+    {
+      "preFilter": {},
+      "originLabel": "caracteristiques_2007",
+      "index": 2
+    },
+    {
+      "preFilter": {},
+      "originLabel": "caracteristiques_2008",
+      "index": 3
+    },
+    {
+      "preFilter": {},
+      "originLabel": "caracteristiques_2009",
+      "index": 4
+    },
+    {
+      "preFilter": {},
+      "originLabel": "caracteristiques_2010",
+      "index": 5
+    },
+    {
+      "preFilter": {},
+      "originLabel": "caracteristiques_2011",
+      "index": 6
+    },
+    {
+      "preFilter": {},
+      "originLabel": "caracteristiques_2012",
+      "index": 7
+    },
+    {
+      "preFilter": {},
+      "originLabel": "caracteristiques_2013",
+      "index": 8
+    },
+    {
+      "preFilter": {},
+      "originLabel": "caracteristiques_2014",
+      "index": 9
+    },
+    {
+      "preFilter": {},
+      "originLabel": "caracteristiques_2015",
+      "index": 10
+    },
+    {
+      "preFilter": {},
+      "originLabel": "caracteristiques_2016",
+      "index": 11
+    },
+    {
+      "preFilter": {},
+      "originLabel": "caracteristiques_2017",
+      "index": 12
+    }
+  ],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "Num_Acc",
+            "type": "string"
+          },
+          {
+            "name": "an",
+            "type": "string"
+          },
+          {
+            "name": "mois",
+            "type": "string"
+          },
+          {
+            "name": "jour",
+            "type": "string"
+          },
+          {
+            "name": "hrmn",
+            "type": "string"
+          },
+          {
+            "name": "lum",
+            "type": "string"
+          },
+          {
+            "name": "agg",
+            "type": "string"
+          },
+          {
+            "name": "int",
+            "type": "string"
+          },
+          {
+            "name": "atm",
+            "type": "string"
+          },
+          {
+            "name": "col",
+            "type": "string"
+          },
+          {
+            "name": "com",
+            "type": "string"
+          },
+          {
+            "name": "adr",
+            "type": "string"
+          },
+          {
+            "name": "gps",
+            "type": "string"
+          },
+          {
+            "name": "lat",
+            "type": "string"
+          },
+          {
+            "name": "long",
+            "type": "string"
+          },
+          {
+            "name": "dep",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
+    "distinct": false,
+    "language": "GREL",
+    "enabled": false
+  },
+  "addOriginColumn": false
 }
