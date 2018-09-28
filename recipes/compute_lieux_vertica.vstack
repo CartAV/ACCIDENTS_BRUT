@@ -1,6 +1,6 @@
 {
   "mode": "CUSTOM",
-  "originColumnName": "original_dataset",
+  "originColumnName": "origin",
   "selectedColumns": [
     "Num_Acc",
     "catr",
@@ -61,17 +61,17 @@
   "virtualInputs": [
     {
       "preFilter": {},
-      "originLabel": "lieux_postgis_baac",
+      "originLabel": "open",
       "index": 0
     },
     {
       "preFilter": {},
-      "originLabel": "PROCEAWEBACCIDENTSBAAC.BAAC_daily_lieu_id_prep",
+      "originLabel": "xml",
       "index": 1
     },
     {
       "preFilter": {},
-      "originLabel": "PROCEAWEBACCIDENTSBAAC.proceaweb_lieux",
+      "originLabel": "txt",
       "index": 2
     }
   ],
@@ -154,6 +154,10 @@
           {
             "name": "Organisme",
             "type": "bigint"
+          },
+          {
+            "name": "origin",
+            "type": "string"
           }
         ],
         "userModified": false
@@ -162,5 +166,5 @@
     "distinct": false,
     "enabled": false
   },
-  "addOriginColumn": false
+  "addOriginColumn": true
 }
