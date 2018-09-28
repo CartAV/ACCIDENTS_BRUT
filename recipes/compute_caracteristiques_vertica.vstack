@@ -1,6 +1,6 @@
 {
   "mode": "CUSTOM",
-  "originColumnName": "original_dataset",
+  "originColumnName": "origin",
   "selectedColumns": [
     "Num_Acc",
     "Organisme",
@@ -52,17 +52,17 @@
         "distinct": false,
         "enabled": false
       },
-      "originLabel": "PROCEAWEBACCIDENTSBAAC.proceaweb_caracteristiques",
+      "originLabel": "txt",
       "index": 0
     },
     {
       "preFilter": {},
-      "originLabel": "caracteristiques_postgis_baac",
+      "originLabel": "open",
       "index": 1
     },
     {
       "preFilter": {},
-      "originLabel": "PROCEAWEBACCIDENTSBAAC.BAAC_daily_caracteristique_id_prep",
+      "originLabel": "xml",
       "index": 2
     }
   ],
@@ -137,6 +137,10 @@
           {
             "name": "long",
             "type": "string"
+          },
+          {
+            "name": "origin",
+            "type": "string"
           }
         ],
         "userModified": false
@@ -145,5 +149,5 @@
     "distinct": false,
     "enabled": false
   },
-  "addOriginColumn": false
+  "addOriginColumn": true
 }
