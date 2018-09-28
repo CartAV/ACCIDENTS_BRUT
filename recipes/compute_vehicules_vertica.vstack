@@ -1,6 +1,6 @@
 {
   "mode": "INTERSECT",
-  "originColumnName": "original_dataset",
+  "originColumnName": "origin",
   "selectedColumns": [
     "Num_Acc",
     "num_veh",
@@ -44,17 +44,17 @@
         "distinct": false,
         "enabled": false
       },
-      "originLabel": "PROCEAWEBACCIDENTSBAAC.proceaweb_vehicules",
+      "originLabel": "txt",
       "index": 0
     },
     {
       "preFilter": {},
-      "originLabel": "vehicule_postgis_baac",
+      "originLabel": "open",
       "index": 1
     },
     {
       "preFilter": {},
-      "originLabel": "PROCEAWEBACCIDENTSBAAC.BAAC_daily_vehicule_id_prep",
+      "originLabel": "xml",
       "index": 2
     }
   ],
@@ -106,6 +106,10 @@
             "name": "occutc",
             "type": "string",
             "maxLength": 16200
+          },
+          {
+            "name": "origin",
+            "type": "string"
           }
         ],
         "userModified": false
@@ -114,5 +118,5 @@
     "distinct": false,
     "enabled": false
   },
-  "addOriginColumn": false
+  "addOriginColumn": true
 }
