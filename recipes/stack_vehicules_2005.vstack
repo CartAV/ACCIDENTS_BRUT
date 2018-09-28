@@ -1,101 +1,5 @@
 {
-  "virtualInputs": [
-    {
-      "index": 0,
-      "originLabel": "vehicules_2005",
-      "preFilter": {
-        "enabled": false,
-        "language": "GREL",
-        "distinct": false
-      }
-    },
-    {
-      "index": 1,
-      "originLabel": "vehicules_2006",
-      "preFilter": {
-        "enabled": false,
-        "language": "GREL",
-        "distinct": false
-      }
-    },
-    {
-      "index": 2,
-      "originLabel": "vehicules_2007",
-      "preFilter": {}
-    },
-    {
-      "index": 3,
-      "originLabel": "vehicules_2008",
-      "preFilter": {}
-    },
-    {
-      "index": 4,
-      "originLabel": "vehicules_2009",
-      "preFilter": {}
-    },
-    {
-      "index": 5,
-      "originLabel": "vehicules_2010",
-      "preFilter": {}
-    },
-    {
-      "index": 6,
-      "originLabel": "vehicules_2011",
-      "preFilter": {}
-    },
-    {
-      "index": 7,
-      "originLabel": "vehicules_2012",
-      "preFilter": {}
-    },
-    {
-      "index": 8,
-      "originLabel": "vehicules_2013",
-      "preFilter": {}
-    },
-    {
-      "index": 9,
-      "originLabel": "vehicules_2014",
-      "preFilter": {}
-    },
-    {
-      "index": 10,
-      "originLabel": "vehicules_2015",
-      "preFilter": {}
-    },
-    {
-      "index": 11,
-      "originLabel": "vehicules_2016",
-      "preFilter": {}
-    }
-  ],
-  "engineParams": {
-    "hive": {
-      "hiveconf": [],
-      "addDkuUdf": false,
-      "executionEngine": "HIVECLI_LOCAL",
-      "useGlobalMetastore": false
-    },
-    "impala": {
-      "forceStreamMode": true
-    },
-    "sparkSQL": {
-      "sparkConfig": {
-        "inheritConf": "default",
-        "conf": []
-      },
-      "overwriteOutputSchema": true,
-      "readParams": {
-        "map": {}
-      }
-    },
-    "lowerCaseSchemaIfEngineRequiresIt": true
-  },
-  "postFilter": {
-    "enabled": false,
-    "language": "GREL",
-    "distinct": false
-  },
+  "mode": "UNION",
   "originColumnName": "original_dataset",
   "selectedColumns": [
     "Num_Acc",
@@ -108,6 +12,150 @@
     "manv",
     "num_veh"
   ],
-  "addOriginColumn": false,
-  "mode": "UNION"
+  "engineParams": {
+    "hive": {
+      "useGlobalMetastore": false,
+      "hiveconf": [],
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": true,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "language": "GREL",
+        "enabled": false
+      },
+      "originLabel": "vehicules_2005",
+      "index": 0
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "language": "GREL",
+        "enabled": false
+      },
+      "originLabel": "vehicules_2006",
+      "index": 1
+    },
+    {
+      "preFilter": {},
+      "originLabel": "vehicules_2007",
+      "index": 2
+    },
+    {
+      "preFilter": {},
+      "originLabel": "vehicules_2008",
+      "index": 3
+    },
+    {
+      "preFilter": {},
+      "originLabel": "vehicules_2009",
+      "index": 4
+    },
+    {
+      "preFilter": {},
+      "originLabel": "vehicules_2010",
+      "index": 5
+    },
+    {
+      "preFilter": {},
+      "originLabel": "vehicules_2011",
+      "index": 6
+    },
+    {
+      "preFilter": {},
+      "originLabel": "vehicules_2012",
+      "index": 7
+    },
+    {
+      "preFilter": {},
+      "originLabel": "vehicules_2013",
+      "index": 8
+    },
+    {
+      "preFilter": {},
+      "originLabel": "vehicules_2014",
+      "index": 9
+    },
+    {
+      "preFilter": {},
+      "originLabel": "vehicules_2015",
+      "index": 10
+    },
+    {
+      "preFilter": {},
+      "originLabel": "vehicules_2016",
+      "index": 11
+    },
+    {
+      "preFilter": {},
+      "originLabel": "vehicules_2017",
+      "index": 12
+    }
+  ],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "Num_Acc",
+            "type": "string"
+          },
+          {
+            "name": "senc",
+            "type": "string"
+          },
+          {
+            "name": "catv",
+            "type": "string"
+          },
+          {
+            "name": "occutc",
+            "type": "string"
+          },
+          {
+            "name": "obs",
+            "type": "string"
+          },
+          {
+            "name": "obsm",
+            "type": "string"
+          },
+          {
+            "name": "choc",
+            "type": "string"
+          },
+          {
+            "name": "manv",
+            "type": "string"
+          },
+          {
+            "name": "num_veh",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
+    "distinct": false,
+    "language": "GREL",
+    "enabled": false
+  },
+  "addOriginColumn": false
 }
