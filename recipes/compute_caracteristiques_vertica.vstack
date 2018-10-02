@@ -100,7 +100,7 @@
           },
           {
             "name": "dep",
-            "type": "bigint"
+            "type": "string"
           },
           {
             "name": "com",
