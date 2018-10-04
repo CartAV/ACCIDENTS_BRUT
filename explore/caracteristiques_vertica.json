@@ -119,9 +119,9 @@
               }
             ],
             "sort": {
-              "type": "AGGREGATION",
-              "measureIdx": 0,
-              "label": "Count of records, descending"
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
             }
           }
         ],
@@ -174,8 +174,7 @@
               "13": true,
               "14": true,
               "15": true,
-              "16": true,
-              "2017": true
+              "16": true
             },
             "explicitExclude": false
           }
@@ -239,7 +238,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAlklEQVRoge3SMQqAIBiGYQ9SeqfGhi7QGnqw3zHoao2FBFmZSr0vfIuTj6gUbRnnF+P8Uvoe2fotuJmk/wX+CHy00vdMViz4M/Cr4P20lVlbmUsbLvUEHK6xvqv+J7wF3sOreoSc4CrggAEDBgwYMGDAgAEDBgwYMGDAgAEDjgPHnGknQ3jWOhnDfRp8toR/gYiIiG60AjNOF/Sgk2blAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAjUlEQVRoge3PsQ2AIBBAURewszS4mZ0TWNxgZ2PlalYmxBAgKCLk/+QKCuBe11E7TbId9pTeJ3uAWw9wzRnROYQBXFP3xT8Bj6KLPW8tn3LHBfado/56/EDkuyl3mgOHMMXARnS/JnV517u/BfvO/aoDYMCAAQMGDBgwYMCAAQMGDBgwYMCAM4KJiKhwJ70p+d3CnZQiAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
