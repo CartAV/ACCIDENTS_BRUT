@@ -104,7 +104,7 @@
           },
           {
             "name": "com",
-            "type": "bigint"
+            "type": "string"
           },
           {
             "name": "agg",
@@ -132,11 +132,11 @@
           },
           {
             "name": "lat",
-            "type": "string"
+            "type": "bigint"
           },
           {
             "name": "long",
-            "type": "string"
+            "type": "bigint"
           },
           {
             "name": "origin",
