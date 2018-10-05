@@ -866,6 +866,28 @@
         },
         "sql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"caracteristiques_stacked\"\nWHERE \"Organisme\" IS NULL\nAND LENGTH(\"adr\") \u003e 24",
         "expandedSql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"caracteristiques_stacked\"\nWHERE \"Organisme\" IS NULL\nAND LENGTH(\"adr\") \u003e 24"
+      },
+      {
+        "mode": "SQL",
+        "id": "ko57oirvySfZ",
+        "runOn": 1538732651022,
+        "runIn": 10,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "fIpRRbG0",
+        "hash": "4fa7026e28ec513df212a27b655439a5",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"caracteristiques_stacked\"\nWHERE LENGTH(\"adr\") \u003e 24",
+        "expandedSql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"caracteristiques_stacked\"\nWHERE LENGTH(\"adr\") \u003e 24"
       }
     ]
   }
