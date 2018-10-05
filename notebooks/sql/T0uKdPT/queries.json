@@ -247,6 +247,30 @@
         "sql": "SELECT SUM(used_compressed_gb) FROM\n(\nSELECT /*+ label(compressed_table_size)*/\n       anchor_table_schema,\n       anchor_table_name,\n       SUM(used_bytes) / ( 1024^3 ) AS used_compressed_gb\nFROM   v_monitor.projection_storage\nWHERE anchor_table_name LIKE \u0027%accident%\u0027\nOR anchor_table_name LIKE \u0027%pve%\u0027\nOR anchor_table_name LIKE \u0027%cartav%\u0027\nGROUP  BY anchor_table_schema,\n          anchor_table_name\nORDER  BY SUM(used_bytes) DESC\n) table_sizes",
         "expandedSql": "SELECT SUM(used_compressed_gb) FROM\n(\nSELECT /*+ label(compressed_table_size)*/\n       anchor_table_schema,\n       anchor_table_name,\n       SUM(used_bytes) / ( 1024^3 ) AS used_compressed_gb\nFROM   v_monitor.projection_storage\nWHERE anchor_table_name LIKE \u0027%accident%\u0027\nOR anchor_table_name LIKE \u0027%pve%\u0027\nOR anchor_table_name LIKE \u0027%cartav%\u0027\nGROUP  BY anchor_table_schema,\n          anchor_table_name\nORDER  BY SUM(used_bytes) DESC\n) table_sizes"
       }
+    ],
+    "3cz093ba7as": [
+      {
+        "mode": "SQL",
+        "id": "k30FcSOb9TyI",
+        "runOn": 1538732623965,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "DqdDTo1A",
+        "hash": "f6a291968d4e8b133ddb3472c6627f45",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"caracteristiques_stacked\"\nWHERE \"Organisme\" IS NULL\nAND LENGTH(\"adr\") \u003e 24\n",
+        "expandedSql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"caracteristiques_stacked\"\nWHERE \"Organisme\" IS NULL\nAND LENGTH(\"adr\") \u003e 24\n"
+      }
     ]
   }
 }
