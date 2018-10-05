@@ -954,6 +954,28 @@
         },
         "sql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"caracteristiques_stacked\"\n--WHERE LENGTH(\"adr\") \u003e 23\nGROUP BY l",
         "expandedSql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"caracteristiques_stacked\"\n--WHERE LENGTH(\"adr\") \u003e 23\nGROUP BY l"
+      },
+      {
+        "mode": "SQL",
+        "id": "0EV8Rw7qWDHI",
+        "runOn": 1538733849614,
+        "runIn": 1170,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "Z08VtM9K",
+        "hash": "46fd0aff270967df954d7043d6000365",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"caracteristiques_stacked\"\nWHERE LENGTH(\"adr\") \u003e 24\nGROUP BY l",
+        "expandedSql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"caracteristiques_stacked\"\nWHERE LENGTH(\"adr\") \u003e 24\nGROUP BY l"
       }
     ]
   }
