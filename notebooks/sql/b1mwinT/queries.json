@@ -888,6 +888,28 @@
         },
         "sql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"caracteristiques_stacked\"\nWHERE LENGTH(\"adr\") \u003e 24",
         "expandedSql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"caracteristiques_stacked\"\nWHERE LENGTH(\"adr\") \u003e 24"
+      },
+      {
+        "mode": "SQL",
+        "id": "8NYIgJ2enpuF",
+        "runOn": 1538732661000,
+        "runIn": 29,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "WR92M86Q",
+        "hash": "46fd0aff270967df954d7043d6000365",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"caracteristiques_stacked\"\nWHERE LENGTH(\"adr\") \u003e 24\nGROUP BY l",
+        "expandedSql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"caracteristiques_stacked\"\nWHERE LENGTH(\"adr\") \u003e 24\nGROUP BY l"
       }
     ]
   }
