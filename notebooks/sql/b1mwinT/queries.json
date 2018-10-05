@@ -843,6 +843,30 @@
         "sql": "select count(*),\"Num_Acc\" from \"lieux_postgis\" group by \"Num_Acc\" order by count desc",
         "expandedSql": "select count(*),\"Num_Acc\" from \"lieux_postgis\" group by \"Num_Acc\" order by count desc"
       }
+    ],
+    "2hd35kfwsva": [
+      {
+        "mode": "SQL",
+        "id": "zGzVb6lDhClx",
+        "runOn": 1538732645335,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "kfDHvd2G",
+        "hash": "cf0e26da2a9174ec8b0b85fb149a4c9d",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"caracteristiques_stacked\"\nWHERE \"Organisme\" IS NULL\nAND LENGTH(\"adr\") \u003e 24",
+        "expandedSql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"caracteristiques_stacked\"\nWHERE \"Organisme\" IS NULL\nAND LENGTH(\"adr\") \u003e 24"
+      }
     ]
   }
 }
