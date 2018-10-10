@@ -271,6 +271,30 @@
         "sql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"caracteristiques_stacked\"\nWHERE \"Organisme\" IS NULL\nAND LENGTH(\"adr\") \u003e 24\n",
         "expandedSql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"caracteristiques_stacked\"\nWHERE \"Organisme\" IS NULL\nAND LENGTH(\"adr\") \u003e 24\n"
       }
+    ],
+    "0.8286353821342437": [
+      {
+        "mode": "SQL",
+        "id": "czRRnd5BCAkq",
+        "runOn": 1539165183375,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "QDqX6uft",
+        "hash": "11c864c15106fe9ff6f2d03d9f44cf8c",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(DISTINCT Num_Acc)\nFROM \"caracteristiques_vertica\"\n",
+        "expandedSql": "SELECT COUNT(DISTINCT Num_Acc)\nFROM \"caracteristiques_vertica\"\n"
+      }
     ]
   }
 }
