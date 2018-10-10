@@ -316,6 +316,28 @@
         },
         "sql": "SELECT COUNT(DISTINCT Num_Acc)\nFROM \"caracteristiques_vertica\"\nWHERE \"an\" \u003d \u002718\u0027\n",
         "expandedSql": "SELECT COUNT(DISTINCT Num_Acc)\nFROM \"caracteristiques_vertica\"\nWHERE \"an\" \u003d \u002718\u0027\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "BJjJvxjsyKPO",
+        "runOn": 1539165238162,
+        "runIn": 122,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "GlT0tyu5",
+        "hash": "1fe6c252b468d81065ae61e209391c24",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT MIN(an)\nFROM \"caracteristiques_vertica\"\n--WHERE \"an\" \u003d \u002718\u0027\n",
+        "expandedSql": "SELECT MIN(an)\nFROM \"caracteristiques_vertica\"\n--WHERE \"an\" \u003d \u002718\u0027\n"
       }
     ]
   }
