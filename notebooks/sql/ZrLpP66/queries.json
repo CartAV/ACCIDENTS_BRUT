@@ -1,0 +1,28 @@
+{
+  "queries": {
+    "21t7nxju7z9": [
+      {
+        "mode": "SQL",
+        "id": "U5RT37in9Xki",
+        "runOn": 1541613950528,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "v0YULT9a",
+        "hash": "77b7aba80a857796b8c2eb66268ca8d4",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM \"caracteristiques_postgis\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027",
+        "expandedSql": "SELECT *\nFROM \"caracteristiques_postgis\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027"
+      }
+    ]
+  }
+}
