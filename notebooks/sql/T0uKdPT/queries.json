@@ -411,10 +411,10 @@
         "mode": "SQL",
         "id": "EKILEZivC24V",
         "runOn": 1542045684509,
-        "runIn": 405,
+        "runIn": 293,
         "runBy": "dupontlau",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "DOxxVxEy",
         "hash": "a3c5251302b52f4849fe20f1f1357330",
         "querySettings": {
