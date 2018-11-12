@@ -57,13 +57,8 @@
     },
     {
       "preFilter": {},
-      "originLabel": "open",
+      "originLabel": "PROCEAWEBACCIDENTSBAAC.BAAC_daily_caracteristique_id_prep_distinct",
       "index": 1
-    },
-    {
-      "preFilter": {},
-      "originLabel": "xml",
-      "index": 2
     }
   ],
   "postFilter": {
