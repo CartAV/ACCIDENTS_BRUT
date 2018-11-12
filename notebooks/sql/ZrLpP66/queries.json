@@ -44,6 +44,28 @@
         },
         "sql": "SELECT *\nFROM  \"caracteristiques_postgis_baac\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027",
         "expandedSql": "SELECT *\nFROM  \"caracteristiques_postgis_baac\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "fd8cTfQcCg5D",
+        "runOn": 1542040137192,
+        "runIn": 951,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "lFWuyJSH",
+        "hash": "9d0b351d0f36a3a8482f7483241922da",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM  \"caracteristiques_postgis_baac\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027",
+        "expandedSql": "SELECT *\nFROM  \"caracteristiques_postgis_baac\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027"
       }
     ]
   }
