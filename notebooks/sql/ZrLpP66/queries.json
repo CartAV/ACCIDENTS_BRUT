@@ -132,6 +132,28 @@
         },
         "sql": "SELECT *\nFROM  \"lieux_postgis\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027 ",
         "expandedSql": "SELECT *\nFROM  \"lieux_postgis\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027 "
+      },
+      {
+        "mode": "SQL",
+        "id": "evyI2PnJ8xyl",
+        "runOn": 1542046154526,
+        "runIn": 155,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "iKzfXw3L",
+        "hash": "647628842aa6f444cba54a8c8c3bc4cf",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM  \"lieux_postgis_baac\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027 ",
+        "expandedSql": "SELECT *\nFROM  \"lieux_postgis_baac\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027 "
       }
     ]
   }
