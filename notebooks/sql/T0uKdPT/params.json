@@ -54,19 +54,6 @@
         "statementsParseMode": "SPLIT",
         "statementsExecutionMode": "PREPARED"
       }
-    },
-    {
-      "id": "yh0yznxqtuh",
-      "type": "QUERY",
-      "querySettings": {
-        "addLimitToStatement": true,
-        "statementsOutOfTransaction": false,
-        "inheritConf": "default",
-        "extraConf": [],
-        "addDkuUdf": false,
-        "statementsParseMode": "SPLIT",
-        "statementsExecutionMode": "PREPARED"
-      }
     }
   ],
   "automationLocal": false,
@@ -75,7 +62,7 @@
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1542039778681
+    "lastModifiedOn": 1542039781753
   },
   "creationTag": {
     "versionNumber": 0,
