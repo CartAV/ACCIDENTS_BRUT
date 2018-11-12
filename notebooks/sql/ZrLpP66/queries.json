@@ -88,6 +88,28 @@
         },
         "sql": "SELECT *\nFROM  \"caracteristiques_postgis\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027\n",
         "expandedSql": "SELECT *\nFROM  \"caracteristiques_postgis\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "3mHYjdCa83xR",
+        "runOn": 1542045706378,
+        "runIn": 3817,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "x69TfjBn",
+        "hash": "76d413fdca4d7c97a6dba9c90e2c957d",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM  \"caracteristiques_postgis\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027\n",
+        "expandedSql": "SELECT *\nFROM  \"caracteristiques_postgis\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027\n"
       }
     ]
   }
