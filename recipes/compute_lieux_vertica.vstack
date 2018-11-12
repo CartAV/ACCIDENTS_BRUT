@@ -66,12 +66,12 @@
     },
     {
       "preFilter": {},
-      "originLabel": "xml",
+      "originLabel": "txt",
       "index": 1
     },
     {
       "preFilter": {},
-      "originLabel": "txt",
+      "originLabel": "PROCEAWEBACCIDENTSBAAC.BAAC_daily_lieu_id_prep_distinct",
       "index": 2
     }
   ],
@@ -105,15 +105,15 @@
           },
           {
             "name": "nbv",
-            "type": "string"
+            "type": "bigint"
           },
           {
             "name": "pr",
-            "type": "string"
+            "type": "bigint"
           },
           {
             "name": "pr1",
-            "type": "string"
+            "type": "bigint"
           },
           {
             "name": "vosp",
@@ -153,7 +153,7 @@
           },
           {
             "name": "Organisme",
-            "type": "bigint"
+            "type": "string"
           },
           {
             "name": "origin",

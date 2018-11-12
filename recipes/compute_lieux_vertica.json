@@ -15,11 +15,11 @@
           "deps": []
         },
         {
-          "ref": "PROCEAWEBACCIDENTSBAAC.BAAC_daily_lieu_id_prep",
+          "ref": "PROCEAWEBACCIDENTSBAAC.proceaweb_lieux",
           "deps": []
         },
         {
-          "ref": "PROCEAWEBACCIDENTSBAAC.proceaweb_lieux",
+          "ref": "PROCEAWEBACCIDENTSBAAC.BAAC_daily_lieu_id_prep_distinct",
           "deps": []
         }
       ]
@@ -36,11 +36,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 18,
+    "versionNumber": 19,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1538148002763
+    "lastModifiedOn": 1542046585861
   },
   "creationTag": {
     "versionNumber": 0,
