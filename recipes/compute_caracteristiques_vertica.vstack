@@ -59,6 +59,11 @@
       "preFilter": {},
       "originLabel": "PROCEAWEBACCIDENTSBAAC.BAAC_daily_caracteristique_id_prep_distinct",
       "index": 1
+    },
+    {
+      "preFilter": {},
+      "originLabel": "caracteristiques_postgis_baac",
+      "index": 2
     }
   ],
   "postFilter": {
@@ -71,7 +76,7 @@
           },
           {
             "name": "Organisme",
-            "type": "string"
+            "type": "bigint"
           },
           {
             "name": "jour",
@@ -127,11 +132,11 @@
           },
           {
             "name": "lat",
-            "type": "bigint"
+            "type": "string"
           },
           {
             "name": "long",
-            "type": "bigint"
+            "type": "string"
           },
           {
             "name": "origin",
