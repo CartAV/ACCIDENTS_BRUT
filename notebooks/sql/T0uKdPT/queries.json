@@ -453,6 +453,30 @@
         "sql": "SELECT *\nFROM  \"lieux_vertica\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027 ",
         "expandedSql": "SELECT *\nFROM  \"lieux_vertica\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027 "
       }
+    ],
+    "cqy3rm2fjfs": [
+      {
+        "mode": "SQL",
+        "id": "0JOL3sjqBQ0I",
+        "runOn": 1548858610940,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "65TLQTHb",
+        "hash": "159d7281ec82fb9ff796dba0d37eb550",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(DISTINCT \"Num_Acc\") \nFROM \"usagers_vertica\"\nWHERE \"Num_Acc\" LIKE \u00272018%\u0027\n  AND \"grav\" \u003d \u0027tué\u0027",
+        "expandedSql": "SELECT COUNT(DISTINCT \"Num_Acc\") \nFROM \"usagers_vertica\"\nWHERE \"Num_Acc\" LIKE \u00272018%\u0027\n  AND \"grav\" \u003d \u0027tué\u0027"
+      }
     ]
   }
 }
