@@ -96,7 +96,7 @@
               "emptyBinsMode": "ZEROS"
             },
             "maxValues": 20,
-            "generateOthersCategory": true,
+            "generateOthersCategory": false,
             "oneTickPerBin": false,
             "filters": [],
             "isA": "dimension",
@@ -211,7 +211,10 @@
               "13": true,
               "14": true,
               "15": true,
-              "16": true
+              "16": true,
+              "17": true,
+              "18": true,
+              "01": true
             },
             "explicitExclude": false
           }
@@ -275,7 +278,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA1UlEQVRoge3QPQ4CIRAF4D2IhGt5AUtLl8rKas9habBxtrCik95L6N7CioSQbJBdws/yXjchw8w3XYeUEy5IcUEq9x7Jkh3MTuMl5bzs4NTDiwPHXoYLUkzQ3q7tGb4DmPe7/sbZay3Y118d2HcAgEsDhwJTg1lPkvUk3ffNgufqbOCdeBxC+6sGL6kBBhjg9sAGCHBoAAY4D3gOCHBoTLP9YWygW28O7PuverDU0yD1NDQDdvsBBhjg9sC31+fcFPhfYBVgtz5e38+lQIABRhAEQcrOD9s0fzMh1lWTAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAARklEQVRoge3PQQkAQAgAQZsY02L3v2pm8CXCLGyAidCsrPe3BgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBpakizXGCGGHv+Pk/wAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
