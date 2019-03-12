@@ -3,13 +3,13 @@
   "id": "Accidents_bruts",
   "type": "step_based",
   "name": "Accidents bruts",
-  "active": true,
+  "active": false,
   "versionTag": {
-    "versionNumber": 17,
+    "versionNumber": 18,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1552399516694
+    "lastModifiedOn": 1552399943887
   },
   "checklists": {
     "checklists": []
@@ -26,7 +26,7 @@
       "type": "temporal",
       "name": "Nightly trigger",
       "delay": 5,
-      "active": true,
+      "active": false,
       "params": {
         "frequency": "Daily",
         "daysOfWeek": [
