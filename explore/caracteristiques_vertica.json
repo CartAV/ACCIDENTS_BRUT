@@ -213,8 +213,7 @@
               "15": true,
               "16": true,
               "17": true,
-              "18": true,
-              "01": true
+              "18": true
             },
             "explicitExclude": false
           }
@@ -278,7 +277,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAARklEQVRoge3PQQkAQAgAQZsY02L3v2pm8CXCLGyAidCsrPe3BgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBpakizXGCGGHv+Pk/wAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAa0lEQVRoge3PsQmAQBBE0StEsEq1MC+3NWMjD/YYDd6HTYd9renZevRr9L7+dUozwaM7y35uCVvpSeDCFnAyYGDg8hZwMmBg4PIWcDJgYODyFnAyYGDg8tYbeOZPwMDAwMDAwMDAMbAk/akbw47IVsUHBAEAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
