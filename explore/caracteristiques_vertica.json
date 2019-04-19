@@ -213,7 +213,8 @@
               "15": true,
               "16": true,
               "17": true,
-              "18": true
+              "18": true,
+              "01": true
             },
             "explicitExclude": false
           }
@@ -277,7 +278,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAa0lEQVRoge3PsQmAQBBE0StEsEq1MC+3NWMjD/YYDd6HTYd9renZevRr9L7+dUozwaM7y35uCVvpSeDCFnAyYGDg8hZwMmBg4PIWcDJgYODyFnAyYGDg8tYbeOZPwMDAwMDAwMDAMbAk/akbw47IVsUHBAEAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAnElEQVRoge3PsQmAQBAF0WtCMLNKsSfjy23NCvQGuc8azMKGA/+15tXddvTr7av3Tb9y8GjA04hRs+zn+qXLasEAwbATDLusFgwQDDvBsMtqwQDBsBMMu6wWDBAMO8Gwy2rBAMGwEwy7rBYMEAw7wbDLasEAwbATDLusFgwQDDvBsMtqwQDBsBMMu6wWDBAMO8Gwm7lRsOd53h/vBs/Myy2z+LIhAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
