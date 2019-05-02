@@ -277,7 +277,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAnElEQVRoge3PsQmAQBAF0WtCMLNKsSfjy23NCvQGuc8azMKGA/+15tXddvTr7av3Tb9y8GjA04hRs+zn+qXLasEAwbATDLusFgwQDDvBsMtqwQDBsBMMu6wWDBAMO8Gwy2rBAMGwEwy7rBYMEAw7wbDLasEAwbATDLusFgwQDDvBsMtqwQDBsBMMu6wWDBAMO8Gwm7lRsOd53h/vBs/Myy2z+LIhAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAXElEQVRoge3PsQ2AMAxFQWcRMiIVYjGosxoTOJ1linuSOxf/IlTfvJ+VXfe2koAT8HG95+ZvtA2r+gUGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgZuAkvS3/oASqwVyjp18LgAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
@@ -425,6 +425,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
